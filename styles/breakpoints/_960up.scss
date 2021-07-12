@@ -1,0 +1,293 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.c-container {
+  padding: 0 15vw;
+}
+
+.c-title {
+  font-size: 32px;
+}
+
+.c-txt-md {
+  font-size: 22px;
+}
+
+//header
+.header {
+  height: 100px;
+
+  & .logo__img {
+    margin: 30px 20px 0 10vw;
+
+    & .logo {
+      width: 150px;
+    }
+  }
+
+  & .pc-container {
+    & .pc-nav-item {
+      padding-top: 2vw;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+//top
+.top {
+  padding-left: 10vw;
+
+  & .swiper-container {
+    height: 94vh;
+
+  }
+}
+
+//concept
+.concept {
+  padding-top: 20vw;
+
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+
+    &:last-of-type {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__block {
+    margin-top: 0;
+    width: 40%;
+  }
+
+  &__img {
+    height: 400px;
+    width: 50%;
+  }
+
+  &__text {
+    width: 40%;
+  }
+
+  &__img-block {
+    height: 400px;
+    width: 50%;
+  }
+
+  &__subtitle {
+    margin: 0;
+  }
+}
+
+//gallery 
+.gallery {
+  & .c-container {
+    padding-bottom: 10vw;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__block {
+    padding-top: 10vw;
+    width: 40%;
+  }
+
+  & .swiper-container2 {
+    padding-top: 10vw;
+    width: 50%;
+
+    & .swiper-slide {
+      height: 400px;
+    }
+  }
+}
+
+//instagram
+.instagram {
+  &__img-box {
+    justify-content: space-between;
+  }
+
+  &__img {
+    height: 250px;
+    margin-bottom: 10px;
+  }
+}
+
+//meu
+.menu {
+  &__block02 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & .desc__box02 {
+    width: 50%;
+
+    & .menu__section {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__p {
+    font-size: 1em;
+  }
+}
+
+//staff
+.staff {
+  & .view-img-block {
+    & .view-img {
+      width: 80%;
+    }
+  }
+
+  &__p {
+    font-size: 1em;
+  }
+}
+
+//access
+.access {
+  & dl {
+    justify-content: space-between;
+    width: 50%;
+  }
+}
+
+//news
+.p-news {
+  &__tit {
+    margin-bottom: 4vw;
+  }
+}
+
+#news-wrapper {
+  & .pc-container {
+    & .pc-nav {
+      margin-top: 12px;
+    }
+  }
+}
+
+//* * * * * * staff-page * * * * * * *
+.c-staff {
+  padding: 10vw 0;
+
+  &__title {
+    & p {
+      font-size: .9rem;
+    }
+  }
+
+  &__item {
+    width: 30%;
+    margin-bottom: 5vw;
+  }
+
+  &__desc {
+    font-size: .8rem;
+  }
+}
+
+//* * * * * * recruite-page * * * * * * *
+.c-recruite {
+  padding: 10vw 0;
+
+  &__title {
+    & p {
+      font-size: .9rem;
+    }
+  }
+
+  &__list {
+    margin-top: 5vw;
+  }
+
+  &__item {
+    font-size: 1rem;
+  }
+
+  &__btn {
+    display: none;
+  }
+}
+
+//* * * * * * news-page * * * * * * *
+
+.c-news {
+  padding: 25vw 0 4vw 0;
+
+  &__title {
+    & span {
+      font-size: 2rem;
+    }
+
+    margin-bottom: 6vw;
+  }
+
+  &__list {
+    padding-bottom: 0;
+
+    & a {
+      padding: 2vw 0 2vw 3vw;
+    }
+
+  }
+
+  &__date {
+    font-size: 1.3rem;
+  }
+
+  &__tit {
+    font-size: 1.2rem;
+  }
+
+  & .page-numbers {
+    margin: 8vw 0;
+
+    &.next {
+      font-size: 1.1rem;
+    }
+  }
+
+}
+
+//* * * * * * news-sl-page * * * * * * *
+.c-news-sl {
+  padding: 10vw 0 0 0;
+
+  & .c-container {
+    padding: 0 12vw;
+  }
+
+  &__tit {
+    & .c-txt-md {
+      font-size: 1.5rem;
+    }
+
+    & span {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__list {
+    padding: 20vw 0 6vw 0;
+  }
+
+  &__contents {
+    & p {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__link {
+    font-size: 1.4rem;
+  }
+}

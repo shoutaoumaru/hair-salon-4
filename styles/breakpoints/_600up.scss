@@ -1,0 +1,118 @@
+/******************************************************************
+
+Stylesheet: 600px以上のモニタで適用
+
+******************************************************************/
+.c-container {
+  padding: 0 10vw;
+}
+
+.c-txt-md {
+  font-size: 20px;
+}
+
+//header
+.header {
+  height: 80px;
+
+  & .logo__img {
+    margin: 20px 10px 0 36px;
+
+    & .logo {
+      height: 50px;
+      width: 120px;
+    }
+  }
+
+  & .mobile-button {
+    top: 30px;
+    right: 30px;
+  }
+
+}
+
+.top {
+  .swiper-container {
+    height: 65vh;
+  }
+}
+
+.concept {
+  &__subtitle {
+    margin-bottom: 10vw;
+  }
+}
+
+//instagram 
+.instagram {
+  &__img {
+    height: 220px;
+  }
+}
+
+//staff
+.staff {
+  &__link {
+    margin: 10vw 0 10vw 0;
+  }
+
+  & .view-img-block {
+    & .view-img {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+
+//* * * * * * news-sl-page * * * * * * *
+.c-news-sl {
+  padding: 20vw 0 5vw 0;
+
+  & .c-container {
+    padding: 0 10vw;
+  }
+
+  &__list {
+    padding: 10vw 0 0 0;
+  }
+
+  &__tit {
+    & .c-txt-md {
+      font-size: 1.2rem;
+    }
+
+    & span {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__contents {
+    padding: 10vw 0 0vw 0;
+
+    & p {
+      font-size: .9rem;
+    }
+  }
+
+  &__link {
+    margin-top: 30px;
+    font-size: 1.1rem;
+  }
+}
+
+//* * * * * * news-page * * * * * * *
+.c-news {
+  &__title {
+    & span {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__link {
+    padding: 4vw 0;
+  }
+
+  &__tit {
+    font-size: 1rem;
+  }
+}

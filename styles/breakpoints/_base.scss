@@ -1,0 +1,882 @@
+// 設定
+body {
+  margin: 0;
+  color: $cBlack;
+  font-weight: 300;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 2;
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul {
+  font-size: 0.8em;
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $cBlack;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.view-more {
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+
+  & span {
+    border-bottom: 1px solid #868686;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+}
+
+.superwrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.c-container {
+  padding: 0 7vw;
+}
+
+.c-txt-lr {
+  font-size: 1.4rem;
+  letter-spacing: 7px;
+  line-height: 2;
+  color: $cSubBlack;
+  margin-top: 0;
+}
+
+.c-txt-md {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: $cSubBlack;
+  margin: 0;
+}
+
+.c-txt-sm {
+  font-size: 1rem;
+  letter-spacing: 3px;
+  line-height: 2;
+  color: $cSubBlack;
+}
+
+.c-txt-xs {
+  font-size: .7rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: $cSubBlack;
+}
+
+.c-title {
+  font-weight: 100;
+  letter-spacing: 5px;
+  display: inline-block;
+  border-top: 1px solid rgb(80, 80, 80);
+  padding-top: 15px;
+}
+
+.icon-tel {
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    background-image: url(/images/common/icon-tel.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 17px;
+    width: 17px;
+  }
+
+}
+
+.icon-map {
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    background-image: url(/images/common/icon-map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 17px;
+    width: 17px;
+  }
+
+}
+
+.icon-net {
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    background-image: url(/images/common/icon-calendar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 17px;
+    width: 17px;
+  }
+
+}
+
+.icon-insta {
+  position: relative;
+  padding-left: 10vw;
+  color: $cBlack;
+  border-bottom: 1px solid $cGray;
+  padding-bottom: 5px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(/images/common/icon-insta-gr.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+  }
+}
+
+//header
+.header {
+  & .sp-navbtn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: .7;
+    height: 6vh;
+    width: 100%;
+    z-index: 2000;
+    transition: all .3s;
+
+    &__container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 60vw;
+      margin: auto;
+
+      & a {
+        display: block;
+      }
+    }
+  }
+
+  @media (min-width:960px) {
+    .sp-navbtn {
+      display: none;
+    }
+  }
+
+  & .hide {
+    &.sp-navbtn {
+      visibility: hidden;
+      transform: translateY(50px);
+      transition: all 0.4s;
+    }
+  }
+}
+
+//TOPセクション
+.top {
+  .swiper-container {
+    height: 60vh;
+
+    @media (max-width:1199px) {
+      & .view-pc {
+        display: none;
+      }
+    }
+  }
+
+  & .swiper-slide {
+    height: auto;
+  }
+}
+
+//CONCEPTセクション
+.concept {
+  padding: 5vw 0;
+
+  &__block {
+    margin: 50px 0 50px 0;
+    letter-spacing: 1px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__subtitle {
+    margin-bottom: 15vw;
+  }
+
+  &__img-block {
+    display: flex;
+    height: 300px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+
+    & img {
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    margin: 80px 20px 100px 20px;
+  }
+
+  &__p {
+    font-size: 0.9em;
+  }
+}
+
+//GALLERYセクション
+.gallery {
+  .c-container {
+    background: #212736;
+    color: #fff;
+    padding-bottom: 12vw;
+  }
+
+  &__wrap {
+    padding-top: 2vw;
+  }
+
+  &__block {
+    margin: 50px 0 50px 0;
+    letter-spacing: 1px;
+    height: 100%;
+  }
+
+
+  & .c-title {
+    border-top: 1px solid #fff;
+  }
+
+  &__subtitle {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-weight: 100;
+  }
+
+  &__p {
+    font-size: 0.9em;
+  }
+}
+
+//Instagramセクション
+.instagram {
+  .c-container {
+    padding-top: 10px;
+    margin-bottom: 100px;
+  }
+
+  &__block {
+    margin: 50px 0 50px 0;
+    letter-spacing: 1px;
+    height: 100%;
+  }
+
+  &__img-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  &__img {
+    height: 100px;
+    width: 48%;
+    margin-bottom: 10px;
+  }
+
+  &__img {
+    border: solid white 2px;
+  }
+
+  &__btn {
+    text-align: right;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin-top: 30px;
+    margin-right: 20px;
+
+    & span {
+      position: relative;
+      padding-left: 25px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgb(148, 148, 148);
+
+      &::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-image: url(/images/common/icon-insta-gr.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+//MENUセクション
+.menu {
+  padding-top: 30px;
+  background: #f5f5f5;
+
+  &__block01 {
+    margin: 100px 0 50px 0;
+    letter-spacing: 1px;
+    height: 100%;
+  }
+
+  &__p {
+    font-size: 0.8em;
+  }
+
+  &__block02 {
+    margin: 50px 0 50px 0;
+    letter-spacing: 1px;
+    max-width: 100%;
+
+    & dl {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 23px;
+      width: 100%;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    & dd,
+    dt {
+      font-size: 0.8em;
+      margin: 0;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 30px;
+
+    & span {
+      font-size: 0.6em;
+    }
+  }
+
+  &__section {
+    margin-bottom: 80px;
+  }
+
+  ul {
+    padding-bottom: 40px;
+  }
+
+  li {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: rgb(100, 98, 98);
+  }
+}
+
+//STAFFセクション
+.staff {
+  padding-bottom: 10vw;
+
+  &__block01 {
+    margin: 100px 0 50px 0;
+    letter-spacing: 1px;
+    height: 100%;
+  }
+
+  &__p {
+    font-size: 0.8em;
+  }
+
+  &__block02 {
+    margin: 50px 0 20px 0;
+    display: flex;
+  }
+
+  &__img {
+    border: solid white 2px;
+    width: 33%;
+  }
+
+  .view-img {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  &__link {
+    text-align: right;
+    margin: 10vw 5vw 30vw 0;
+  }
+}
+
+// ACCESSセクション
+.access {
+
+  &__block {
+    margin: 0 0 50px 0;
+    letter-spacing: 1px;
+    height: 100%;
+  }
+
+  &__desc {
+    font-size: 0.8em;
+    margin-bottom: 50px;
+
+    & dl {
+      display: flex;
+    }
+
+    & dt {
+      width: 73px;
+    }
+  }
+
+  &__btn {
+    text-align: right;
+    letter-spacing: 2px;
+    line-height: 1.5;
+
+    & span {
+      position: relative;
+      padding-left: 25px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgb(148, 148, 148);
+
+      &::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-image: url(/images/common/icon-map.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+//RECRUITEセクション
+.recruite {
+
+  &__block {
+    margin: 100px 0 50px 0;
+    letter-spacing: 1px;
+    height: 100%;
+  }
+
+  &__btn {
+    text-align: right;
+    letter-spacing: 2px;
+    line-height: 1.5;
+
+    & span {
+      position: relative;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgb(148, 148, 148);
+    }
+  }
+}
+
+//#news
+.p-news {
+  position: relative;
+  padding: 10vw 0;
+
+  &__tit {
+    margin-bottom: 5vw;
+
+    & p {
+      font-weight: 100;
+      letter-spacing: 5px;
+    }
+  }
+
+  &__txt {
+    margin: 5vw 0;
+  }
+
+  &__link {
+    display: block;
+    padding: 2vw 0;
+
+    & p {
+      margin-top: 2vw;
+    }
+  }
+
+  &__item {
+    border-bottom: 1px solid rgb(235, 235, 235);
+
+    &:first-child {
+      border-top: 1px solid rgb(235, 235, 235);
+    }
+  }
+
+  & .view-more {
+    padding-right: 0;
+    text-align: right;
+    letter-spacing: 2px;
+  }
+
+  &__date {
+    font-size: 1.2rem;
+    color: $cGray;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+  }
+}
+
+//FOOTERセクション
+.footer {
+  padding: 10vw;
+  background-color: #212736;
+  position: relative;
+
+  .sns {
+    display: flex;
+    justify-content: center;
+    border-top: rgb(129, 128, 126) solid 1px;
+    border-bottom: rgb(129, 128, 126) solid 1px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+
+    & i {
+      color: white;
+      padding-right: 50px;
+    }
+  }
+
+  .copy-right {
+    height: 70px;
+    color: white;
+    font-size: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
+
+//* * * * * * * * * staff-page * * * * * * * * * * 
+.c-staff {
+  padding: 15vw 0;
+  letter-spacing: 3px;
+  line-height: 2;
+
+  &__title {
+    & span {
+      padding-top: 8vw;
+      text-align: center;
+      font-weight: 100;
+      font-size: 2rem;
+      display: block;
+    }
+
+    & p {
+      margin-top: 10vw;
+      font-size: .5rem;
+      line-height: 2;
+    }
+
+  }
+
+  &__list {
+    margin-top: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 45%;
+
+    & img {
+      height: 180px;
+    }
+  }
+
+  &__name {
+    text-align: center;
+    font-size: .7rem;
+  }
+
+  &__desc {
+    font-size: .5rem;
+  }
+}
+
+//* * * * * * * * * recruite-page * * * * * * * * * * 
+.c-recruite {
+  padding: 15vw 0;
+  letter-spacing: 3px;
+  line-height: 2;
+
+  &__title {
+    & span {
+      padding-top: 8vw;
+      text-align: center;
+      font-weight: 100;
+      font-size: 2rem;
+      display: block;
+    }
+
+    & p {
+      margin-top: 10vw;
+      font-size: .5rem;
+      line-height: 2;
+    }
+
+  }
+
+  &__list {
+    margin-top: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+
+  &__btn {
+    text-align: right;
+    letter-spacing: 2px;
+    line-height: 1.5;
+
+    & span {
+      position: relative;
+      padding-left: 25px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgb(148, 148, 148);
+
+      &::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 6px;
+        left: 0;
+        height: 15px;
+        width: 15px;
+        background-image: url(/images/common/icon-tel.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__name {
+    text-align: center;
+    font-size: .7rem;
+  }
+
+  &__desc {
+    font-size: .5rem;
+  }
+}
+
+//* * * * * * news-page * * * * * * * 
+.c-news {
+  padding: 30vw 0 10vw 0;
+  letter-spacing: 3px;
+
+  &__link {
+    display: block;
+    padding: 5vw 0;
+  }
+
+  &__tit {
+    margin-top: 2vw;
+    font-size: .8rem;
+  }
+
+  &__date {
+    font-size: 1.2rem;
+    color: rgb(150, 150, 150);
+  }
+
+  &__item {
+    border-bottom: 1px solid rgb(209, 209, 209);
+
+    &:first-child {
+      border-top: 1px solid rgb(209, 209, 209);
+    }
+  }
+
+  &__list {
+    padding-bottom: 5vw;
+  }
+
+  .page-numbers {
+    margin: 12vw 0;
+  }
+
+  .page-numbers:not(.next):not(.prev) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $cBlack;
+
+    & .current {
+      border: 1px solid rgba(0, 0, 0, 0);
+      background: #dffde2 !important;
+    }
+
+    & .page-numbers:not(.next):not(.prev) {
+      width: 8vw;
+      height: 8vw;
+      border-radius: 100%;
+      border: 1px solid #C4CCD1;
+      background: #fff;
+      margin: 0 1.3vw;
+    }
+
+    & .next {
+      position: relative;
+      padding-right: 22px;
+      top: 0;
+
+      &::after {
+        transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
+        content: "";
+        position: absolute;
+        right: 0;
+        background-image: url(/images/common/arrow.png);
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        top: 5px;
+        width: 15px;
+        height: 15px;
+        margin-left: 8px;
+      }
+    }
+
+    @media (max-width:767px) {
+      & .next {
+        display: none;
+      }
+    }
+
+    @media (min-width:768px) {
+      & .page-numbers:not(.next):not(.prev) {
+        width: 40px;
+        height: 40px;
+      }
+
+      & .next {
+        top: 0;
+        padding-left: 10px;
+      }
+    }
+
+    @media (min-width:768px) {
+      & .page-numbers:not(.next):not(.prev) {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+      }
+
+      & .next {
+        top: 0;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  &__contents {
+    line-height: 2;
+    font-size: .8rem;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 10vw;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+
+  .c-news__block {
+    padding: 8vw 0;
+  }
+}
+
+//* * * * * * news-single-page * * * * * * * 
+.c-news-sl {
+  padding: 20vw 0 10vw 0;
+
+  & .c-container {
+    padding: 5vw 5vw 0 5vw;
+  }
+
+  &__date {
+    color: rgb(173, 173, 173);
+    font-size: 1rem;
+  }
+
+  &__list {
+    padding: 15vw 0 0 0;
+  }
+
+  &__contents {
+    padding: 20vw 0 12vw 0;
+    line-height: 2.5;
+
+    & p {
+      font-size: .8rem;
+    }
+  }
+
+  &__link {
+    margin: 0 0 10vw 0;
+    text-align: right;
+    font-size: .8rem;
+
+    & a {
+      border-bottom: 1px solid rgb(114, 114, 114);
+    }
+  }
+}
