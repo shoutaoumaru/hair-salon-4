@@ -13,8 +13,6 @@ Stylesheet: 600px以上のモニタで適用
 
 //header
 .header {
-  height: 80px;
-
   & .logo__img {
     margin: 20px 10px 0 36px;
 
@@ -24,14 +22,21 @@ Stylesheet: 600px以上のモニタで適用
     }
   }
 
-  & .mobile-button {
-    top: 30px;
-    right: 30px;
+  & .mobile-container {
+    & .mobile-button {
+      top: 28px;
+      right: 30px;
+    }
   }
 
+  & .sp-navbtn {
+    display: none;
+  }
 }
 
 .top {
+  padding-top: 78px;
+
   .swiper-container {
     height: 65vh;
   }

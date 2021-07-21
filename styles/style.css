@@ -704,18 +704,29 @@ a:hover {
 }
 
 .icon-tel {
-  position: relative;
-}
-
-.icon-tel::before {
-  content: '';
-  display: block;
-  background-image: url(/images/common/icon-tel.png);
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  background-image: url(/images/common/tel-white.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 17px;
-  width: 17px;
+  height: 12px;
+  width: 12px;
+}
+
+.icon-net {
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  background-image: url(/images/common/icon-link-1-white.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 13px;
+  width: 13px;
 }
 
 .icon-map {
@@ -726,21 +737,6 @@ a:hover {
   content: '';
   display: block;
   background-image: url(/images/common/icon-map.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 17px;
-  width: 17px;
-}
-
-.icon-net {
-  position: relative;
-}
-
-.icon-net::before {
-  content: '';
-  display: block;
-  background-image: url(/images/common/icon-calendar.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -773,21 +769,19 @@ a:hover {
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: #fff;
+  background-color: #161616;
   opacity: .7;
-  height: 6vh;
+  height: 6.5vh;
   width: 100%;
   z-index: 2000;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header .sp-navbtn__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -799,12 +793,25 @@ a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 60vw;
+  width: 77vw;
   margin: auto;
 }
 
 .header .sp-navbtn__container a {
-  display: block;
+  position: relative;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding-right: 18px;
+}
+
+.header .sp-navbtn__container .tel {
+  letter-spacing: 2px;
+}
+
+.header .sp-navbtn__container a:hover,
+.header .sp-navbtn__container a:active {
+  text-decoration: underline;
 }
 
 @media (min-width: 960px) {
@@ -819,6 +826,10 @@ a:hover {
           transform: translateY(50px);
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+.top {
+  padding-top: 65px;
 }
 
 .top .swiper-container {
@@ -1586,7 +1597,7 @@ a:hover {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   margin: auto;
-  z-index: 5000;
+  z-index: 1000;
 }
 
 .top__text {
@@ -1709,13 +1720,7 @@ a:hover {
 }
 
 .header {
-  height: 60px;
   width: 100%;
-  background-color: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 200;
 }
 
 .header .logo__img {
@@ -1732,21 +1737,30 @@ a:hover {
   width: 90px;
 }
 
-.header .mobile-button {
+.header .mobile-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 6000;
+  width: 100%;
+  background-color: #fff;
+}
+
+.header .mobile-container .mobile-button {
   position: fixed;
   top: 18px;
   right: 10px;
-  z-index: 200;
+  z-index: 4000;
 }
 
-.header .mobile-menu__btn {
+.header .mobile-container .mobile-menu__btn {
   background-color: unset;
   border: none;
   outline: none !important;
   cursor: pointer;
 }
 
-.header .mobile-menu__btn > span {
+.header .mobile-container .mobile-menu__btn > span {
   background-color: black;
   width: 25px;
   height: 1px;
@@ -1758,8 +1772,15 @@ a:hover {
   transition: transform 0.7s, -webkit-transform 0.7s;
 }
 
-.header .mobile-menu__btn > span:last-child {
+.header .mobile-container .mobile-menu__btn > span:last-child {
   margin-bottom: 0;
+}
+
+@media (min-width: 600px) {
+  .header .mobile-container .mobile-menu__btn > span {
+    width: 35px;
+    margin-bottom: 10px;
+  }
 }
 
 .header .pc-container {
@@ -1795,7 +1816,7 @@ a:hover {
 
 .menu-open.mobile-menu {
   opacity: 1;
-  z-index: 100;
+  z-index: 5000;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   -webkit-transform: none;
@@ -1833,6 +1854,20 @@ a:hover {
           transform: translateY(-10px) rotate(-135deg);
 }
 
+@media (min-width: 600px) {
+  .menu-open .mobile-menu__btn > span {
+    background-color: black;
+  }
+  .menu-open .mobile-menu__btn > span:nth-child(1) {
+    -webkit-transform: translateY(10px) rotate(135deg);
+            transform: translateY(10px) rotate(135deg);
+  }
+  .menu-open .mobile-menu__btn > span:nth-child(3) {
+    -webkit-transform: translateY(-11px) rotate(-135deg);
+            transform: translateY(-11px) rotate(-135deg);
+  }
+}
+
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -1863,6 +1898,12 @@ a:hover {
 
 .mobile-menu__li {
   margin-bottom: 40px;
+}
+
+@media (min-width: 600px) {
+  .mobile-menu__li {
+    font-size: 1.4rem;
+  }
 }
 
 .cover-slide {
@@ -2431,9 +2472,6 @@ Stylesheet: 600px以上のモニタで適用
   .c-txt-md {
     font-size: 20px;
   }
-  .header {
-    height: 80px;
-  }
   .header .logo__img {
     margin: 20px 10px 0 36px;
   }
@@ -2441,9 +2479,15 @@ Stylesheet: 600px以上のモニタで適用
     height: 50px;
     width: 120px;
   }
-  .header .mobile-button {
-    top: 30px;
+  .header .mobile-container .mobile-button {
+    top: 28px;
     right: 30px;
+  }
+  .header .sp-navbtn {
+    display: none;
+  }
+  .top {
+    padding-top: 78px;
   }
   .top .swiper-container {
     height: 65vh;

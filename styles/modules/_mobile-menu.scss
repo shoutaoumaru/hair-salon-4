@@ -1,11 +1,5 @@
 .header {
-  height: 60px;
   width: 100%;
-  background-color: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 200;
 
   & .logo__img {
     display: inline-block;
@@ -21,29 +15,45 @@
     width: 90px;
   }
 
-  .mobile-button {
+  .mobile-container {
     position: fixed;
-    top: 18px;
-    right: 10px;
-    z-index: 200;
-  }
+    top: 0;
+    left: 0;
+    z-index: 6000;
+    width: 100%;
+    background-color: $cWhite;
 
-  .mobile-menu__btn {
-    background-color: unset;
-    border: none;
-    outline: none !important;
-    cursor: pointer;
+    .mobile-button {
+      position: fixed;
+      top: 18px;
+      right: 10px;
+      z-index: 4000;
+    }
 
-    &>span {
-      background-color: black;
-      width: 25px;
-      height: 1px;
-      display: block;
-      margin-bottom: 7px;
-      transition: transform 0.7s;
+    .mobile-menu__btn {
+      background-color: unset;
+      border: none;
+      outline: none !important;
+      cursor: pointer;
 
-      &:last-child {
-        margin-bottom: 0;
+      &>span {
+        background-color: black;
+        width: 25px;
+        height: 1px;
+        display: block;
+        margin-bottom: 7px;
+        transition: transform 0.7s;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      @media (min-width:600px) {
+        &>span {
+          width: 35px;
+          margin-bottom: 10px;
+        }
       }
     }
   }
@@ -74,8 +84,6 @@
       }
     }
   }
-
-
 }
 
 // メニューオープン
@@ -83,7 +91,7 @@
 
   &.mobile-menu {
     opacity: 1;
-    z-index: 100;
+    z-index: 5000;
     transition: all 0.5s;
     transform: none;
   }
@@ -110,6 +118,20 @@
       &:nth-child(3) {
         transition-delay: 140ms;
         transform: translateY(-10px) rotate(-135deg);
+      }
+    }
+
+    @media (min-width:600px) {
+      &>span {
+        background-color: black;
+
+        &:nth-child(1) {
+          transform: translateY(10px) rotate(135deg);
+        }
+
+        &:nth-child(3) {
+          transform: translateY(-11px) rotate(-135deg);
+        }
       }
     }
   }
@@ -144,7 +166,12 @@
 
   &__li {
     margin-bottom: 40px;
+  }
 
+  @media (min-width:600px) {
+    &__li {
+      font-size: 1.4rem;
+    }
   }
 }
 
