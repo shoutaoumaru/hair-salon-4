@@ -156,7 +156,7 @@
     padding-top: 35vw;
   }
 
-  &__ul {
+  &__list {
     width: 100%;
     font-size: 0.9em;
     top: 164px;
@@ -164,7 +164,7 @@
     list-style: none;
   }
 
-  &__li {
+  &__item {
     margin-bottom: 40px;
   }
 
@@ -255,7 +255,7 @@
       }
     }
 
-    &__li {
+    &__item {
       font-size: 1.4rem;
     }
 

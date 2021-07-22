@@ -1888,7 +1888,7 @@ a:hover {
   padding-top: 35vw;
 }
 
-.mobile-menu__ul {
+.mobile-menu__list {
   width: 100%;
   font-size: 0.9em;
   top: 164px;
@@ -1896,7 +1896,7 @@ a:hover {
   list-style: none;
 }
 
-.mobile-menu__li {
+.mobile-menu__item {
   margin-bottom: 40px;
 }
 
@@ -1977,7 +1977,7 @@ a:hover {
     width: 18px;
     height: 18px;
   }
-  .mobile-menu__li {
+  .mobile-menu__item {
     font-size: 1.4rem;
   }
   .mobile-menu__nav {
