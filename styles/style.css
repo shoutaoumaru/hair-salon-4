@@ -615,7 +615,7 @@ body {
   margin: 0;
   color: #161616;
   font-weight: 300;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   line-height: 2;
   text-transform: uppercase;
 }
@@ -689,7 +689,7 @@ a:hover {
 }
 
 .c-txt-xs {
-  font-size: .7rem;
+  font-size: 0.7rem;
   letter-spacing: 2px;
   line-height: 2;
   color: #474747;
@@ -734,7 +734,7 @@ a:hover {
 }
 
 .icon-map::before {
-  content: '';
+  content: "";
   display: block;
   background-image: url(/images/common/icon-map.png);
   background-position: center;
@@ -753,7 +753,7 @@ a:hover {
 }
 
 .icon-insta::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -770,7 +770,7 @@ a:hover {
   bottom: 0;
   left: 0;
   background-color: #161616;
-  opacity: .7;
+  opacity: 0.7;
   height: 6.5vh;
   width: 100%;
   z-index: 2000;
@@ -964,7 +964,7 @@ a:hover {
 }
 
 .instagram__btn span::before {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   top: 3px;
@@ -1110,7 +1110,7 @@ a:hover {
 }
 
 .access__btn span::before {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   top: 3px;
@@ -1246,7 +1246,7 @@ a:hover {
 
 .c-staff__title p {
   margin-top: 10vw;
-  font-size: .5rem;
+  font-size: 0.5rem;
   line-height: 2;
 }
 
@@ -1272,11 +1272,29 @@ a:hover {
 
 .c-staff__name {
   text-align: center;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .c-staff__desc {
-  font-size: .5rem;
+  font-size: 0.5rem;
+}
+
+.sns-link span {
+  position: relative;
+  padding-left: 30px;
+  font-size: 16px;
+}
+
+.sns-link span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: inline-block;
+  background-image: url(/images/common/icon-insta-gr.png);
+  background-size: contain;
+  height: 20px;
+  width: 20px;
 }
 
 .c-recruite {
@@ -1295,7 +1313,7 @@ a:hover {
 
 .c-recruite__title p {
   margin-top: 10vw;
-  font-size: .5rem;
+  font-size: 0.5rem;
   line-height: 2;
 }
 
@@ -1325,7 +1343,7 @@ a:hover {
 }
 
 .c-recruite__btn span::before {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   top: 6px;
@@ -1340,11 +1358,11 @@ a:hover {
 
 .c-recruite__name {
   text-align: center;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .c-recruite__desc {
-  font-size: .5rem;
+  font-size: 0.5rem;
 }
 
 .c-news {
@@ -1359,7 +1377,7 @@ a:hover {
 
 .c-news__tit {
   margin-top: 2vw;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news__date {
@@ -1406,7 +1424,7 @@ a:hover {
   width: 8vw;
   height: 8vw;
   border-radius: 100%;
-  border: 1px solid #C4CCD1;
+  border: 1px solid #c4ccd1;
   background: #fff;
   margin: 0 1.3vw;
 }
@@ -1464,7 +1482,7 @@ a:hover {
 
 .c-news__contents {
   line-height: 2;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news__title {
@@ -1501,13 +1519,13 @@ a:hover {
 }
 
 .c-news-sl__contents p {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news-sl__link {
   margin: 0 0 10vw 0;
   text-align: right;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news-sl__link a {
@@ -2584,6 +2602,15 @@ Stylesheet: 600px以上のモニタで適用
     width: 80%;
     margin: 0 auto;
   }
+  .staff .sns-link span {
+    font-size: 25px;
+  }
+  .staff .sns-link span::before {
+    height: 24px;
+    width: 24px;
+    top: 0px;
+    right: 10px;
+  }
   .c-news-sl {
     padding: 20vw 0 5vw 0;
   }
@@ -2603,7 +2630,7 @@ Stylesheet: 600px以上のモニタで適用
     padding: 10vw 0 0vw 0;
   }
   .c-news-sl__contents p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .c-news-sl__link {
     margin-top: 30px;
@@ -2759,20 +2786,29 @@ Stylesheet: 960px以上のモニタで適用
     padding: 10vw 0;
   }
   .c-staff__title p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .c-staff__item {
     width: 30%;
     margin-bottom: 5vw;
   }
   .c-staff__desc {
-    font-size: .8rem;
+    font-size: 0.8rem;
+  }
+  .c-staff .sns-link span {
+    font-size: 25px;
+  }
+  .c-staff .sns-link span::before {
+    height: 24px;
+    width: 24px;
+    top: 9px;
+    right: 10px;
   }
   .c-recruite {
     padding: 10vw 0;
   }
   .c-recruite__title p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .c-recruite__list {
     margin-top: 5vw;
@@ -2875,6 +2911,15 @@ Stylesheet: 1200px以上のモニタで適用
   }
   .c-staff__desc {
     font-size: 1rem;
+  }
+  .c-staff .sns-link span {
+    font-size: 25px;
+  }
+  .c-staff .sns-link span::before {
+    height: 24px;
+    width: 24px;
+    top: 9px;
+    right: 10px;
   }
   .c-recruite {
     padding: 5vw 0;

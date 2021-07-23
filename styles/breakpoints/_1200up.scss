@@ -7,7 +7,7 @@ Stylesheet: 1200px以上のモニタで適用
   font-size: 28px;
 }
 
-//header 
+//header
 .header {
   & .logo__img {
     margin-top: 38px;
@@ -69,6 +69,18 @@ Stylesheet: 1200px以上のモニタで適用
 
   &__desc {
     font-size: 1rem;
+  }
+
+  .sns-link {
+    & span {
+      font-size: 25px;
+      &::before {
+        height: 24px;
+        width: 24px;
+        top: 9px;
+        right: 10px;
+      }
+    }
   }
 }
 

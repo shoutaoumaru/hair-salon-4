@@ -41,7 +41,6 @@ Stylesheet: 960px以上のモニタで適用
 
   & .swiper-container {
     height: 94vh;
-
   }
 }
 
@@ -82,7 +81,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-//gallery 
+//gallery
 .gallery {
   & .c-container {
     padding-bottom: 10vw;
@@ -182,7 +181,7 @@ Stylesheet: 960px以上のモニタで適用
 
   &__title {
     & p {
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
   }
 
@@ -192,7 +191,19 @@ Stylesheet: 960px以上のモニタで適用
   }
 
   &__desc {
-    font-size: .8rem;
+    font-size: 0.8rem;
+  }
+
+  .sns-link {
+    & span {
+      font-size: 25px;
+      &::before {
+        height: 24px;
+        width: 24px;
+        top: 9px;
+        right: 10px;
+      }
+    }
   }
 }
 
@@ -202,7 +213,7 @@ Stylesheet: 960px以上のモニタで適用
 
   &__title {
     & p {
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
   }
 
@@ -238,7 +249,6 @@ Stylesheet: 960px以上のモニタで適用
     & a {
       padding: 2vw 0 2vw 3vw;
     }
-
   }
 
   &__date {
@@ -256,7 +266,6 @@ Stylesheet: 960px以上のモニタで適用
       font-size: 1.1rem;
     }
   }
-
 }
 
 //* * * * * * news-sl-page * * * * * * *

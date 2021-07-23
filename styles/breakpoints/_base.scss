@@ -3,7 +3,7 @@ body {
   margin: 0;
   color: $cBlack;
   font-weight: 300;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   line-height: 2;
   text-transform: uppercase;
 }
@@ -76,7 +76,7 @@ a:hover {
 }
 
 .c-txt-xs {
-  font-size: .7rem;
+  font-size: 0.7rem;
   letter-spacing: 2px;
   line-height: 2;
   color: $cSubBlack;
@@ -120,7 +120,7 @@ a:hover {
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     background-image: url(/images/common/icon-map.png);
     background-position: center;
@@ -129,7 +129,6 @@ a:hover {
     height: 17px;
     width: 17px;
   }
-
 }
 
 .icon-insta {
@@ -140,7 +139,7 @@ a:hover {
   padding-bottom: 5px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -160,7 +159,7 @@ a:hover {
     bottom: 0;
     left: 0;
     background-color: $cBlack;
-    opacity: .7;
+    opacity: 0.7;
     height: 6.5vh;
     width: 100%;
     z-index: 2000;
@@ -197,7 +196,7 @@ a:hover {
     }
   }
 
-  @media (min-width:960px) {
+  @media (min-width: 960px) {
     .sp-navbtn {
       display: none;
     }
@@ -219,7 +218,7 @@ a:hover {
   .swiper-container {
     height: 60vh;
 
-    @media (max-width:1199px) {
+    @media (max-width: 1199px) {
       & .view-pc {
         display: none;
       }
@@ -287,7 +286,6 @@ a:hover {
     height: 100%;
   }
 
-
   & .c-title {
     border-top: 1px solid #fff;
   }
@@ -346,7 +344,7 @@ a:hover {
       border-bottom: 1px solid rgb(148, 148, 148);
 
       &::before {
-        content: '';
+        content: "";
         display: inline-block;
         position: absolute;
         top: 3px;
@@ -458,7 +456,6 @@ a:hover {
 
 // ACCESSセクション
 .access {
-
   &__block {
     margin: 0 0 50px 0;
     letter-spacing: 1px;
@@ -490,7 +487,7 @@ a:hover {
       border-bottom: 1px solid rgb(148, 148, 148);
 
       &::before {
-        content: '';
+        content: "";
         display: inline-block;
         position: absolute;
         top: 3px;
@@ -508,7 +505,6 @@ a:hover {
 
 //RECRUITEセクション
 .recruite {
-
   &__block {
     margin: 100px 0 50px 0;
     letter-spacing: 1px;
@@ -609,7 +605,7 @@ a:hover {
   }
 }
 
-//* * * * * * * * * staff-page * * * * * * * * * * 
+//* * * * * * * * * staff-page * * * * * * * * * *
 .c-staff {
   padding: 15vw 0;
   letter-spacing: 3px;
@@ -626,10 +622,9 @@ a:hover {
 
     & p {
       margin-top: 10vw;
-      font-size: .5rem;
+      font-size: 0.5rem;
       line-height: 2;
     }
-
   }
 
   &__list {
@@ -649,15 +644,34 @@ a:hover {
 
   &__name {
     text-align: center;
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   &__desc {
-    font-size: .5rem;
+    font-size: 0.5rem;
   }
 }
 
-//* * * * * * * * * recruite-page * * * * * * * * * * 
+.sns-link {
+  & span {
+    position: relative;
+    padding-left: 30px;
+    font-size: 16px;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      display: inline-block;
+      background-image: url(/images/common/icon-insta-gr.png);
+      background-size: contain;
+      height: 20px;
+      width: 20px;
+    }
+  }
+}
+
+//* * * * * * * * * recruite-page * * * * * * * * * *
 .c-recruite {
   padding: 15vw 0;
   letter-spacing: 3px;
@@ -674,10 +688,9 @@ a:hover {
 
     & p {
       margin-top: 10vw;
-      font-size: .5rem;
+      font-size: 0.5rem;
       line-height: 2;
     }
-
   }
 
   &__list {
@@ -686,7 +699,6 @@ a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
 
   &__btn {
     text-align: right;
@@ -700,7 +712,7 @@ a:hover {
       border-bottom: 1px solid rgb(148, 148, 148);
 
       &::before {
-        content: '';
+        content: "";
         display: inline-block;
         position: absolute;
         top: 6px;
@@ -717,15 +729,15 @@ a:hover {
 
   &__name {
     text-align: center;
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   &__desc {
-    font-size: .5rem;
+    font-size: 0.5rem;
   }
 }
 
-//* * * * * * news-page * * * * * * * 
+//* * * * * * news-page * * * * * * *
 .c-news {
   padding: 30vw 0 10vw 0;
   letter-spacing: 3px;
@@ -737,7 +749,7 @@ a:hover {
 
   &__tit {
     margin-top: 2vw;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   &__date {
@@ -777,7 +789,7 @@ a:hover {
       width: 8vw;
       height: 8vw;
       border-radius: 100%;
-      border: 1px solid #C4CCD1;
+      border: 1px solid #c4ccd1;
       background: #fff;
       margin: 0 1.3vw;
     }
@@ -803,13 +815,13 @@ a:hover {
       }
     }
 
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
       & .next {
         display: none;
       }
     }
 
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       & .page-numbers:not(.next):not(.prev) {
         width: 40px;
         height: 40px;
@@ -821,7 +833,7 @@ a:hover {
       }
     }
 
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       & .page-numbers:not(.next):not(.prev) {
         width: 50px;
         height: 50px;
@@ -837,7 +849,7 @@ a:hover {
 
   &__contents {
     line-height: 2;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   &__title {
@@ -852,7 +864,7 @@ a:hover {
   }
 }
 
-//* * * * * * news-single-page * * * * * * * 
+//* * * * * * news-single-page * * * * * * *
 .c-news-sl {
   padding: 20vw 0 10vw 0;
 
@@ -874,14 +886,14 @@ a:hover {
     line-height: 2.5;
 
     & p {
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
   }
 
   &__link {
     margin: 0 0 10vw 0;
     text-align: right;
-    font-size: .8rem;
+    font-size: 0.8rem;
 
     & a {
       border-bottom: 1px solid rgb(114, 114, 114);
