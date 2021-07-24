@@ -2611,6 +2611,10 @@ Stylesheet: 600px以上のモニタで適用
     top: 0px;
     right: 10px;
   }
+  .menu__block02 dd,
+  .menu__block02 dt {
+    font-size: 1rem;
+  }
   .c-news-sl {
     padding: 20vw 0 5vw 0;
   }
@@ -2746,6 +2750,9 @@ Stylesheet: 960px以上のモニタで適用
   .instagram__img {
     height: 250px;
     margin-bottom: 10px;
+  }
+  .instagram__btn span::before {
+    top: 8px;
   }
   .menu__block02 {
     display: -webkit-box;

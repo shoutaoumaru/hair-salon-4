@@ -117,8 +117,14 @@ Stylesheet: 960px以上のモニタで適用
     height: 250px;
     margin-bottom: 10px;
   }
+  &__btn {
+    & span {
+      &::before {
+        top: 8px;
+      }
+    }
+  }
 }
-
 //meu
 .menu {
   &__block02 {

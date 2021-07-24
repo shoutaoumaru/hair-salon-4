@@ -81,6 +81,16 @@ Stylesheet: 600px以上のモニタで適用
   }
 }
 
+// menu
+.menu {
+  &__block02 {
+    & dd,
+    dt {
+      font-size: 1rem;
+    }
+  }
+}
+
 //* * * * * * news-sl-page * * * * * * *
 .c-news-sl {
   padding: 20vw 0 5vw 0;
