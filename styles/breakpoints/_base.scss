@@ -635,6 +635,8 @@ a:hover {
   }
 
   &__item {
+    position: relative;
+    margin-bottom: 30px;
     width: 45%;
 
     & img {
@@ -653,20 +655,27 @@ a:hover {
 }
 
 .sns-link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -15px;
+  margin: auto;
+
   & span {
     position: relative;
-    padding-left: 30px;
-    font-size: 16px;
+    padding-left: 20px;
+    font-size: 0.8rem;
     &::before {
       position: absolute;
-      top: 0;
+      top: 5px;
       left: 0;
       content: "";
       display: inline-block;
       background-image: url(/images/common/icon-insta-gr.png);
       background-size: contain;
-      height: 20px;
-      width: 20px;
+      background-repeat: no-repeat;
+      height: 0.8rem;
+      width: 0.8rem;
     }
   }
 }

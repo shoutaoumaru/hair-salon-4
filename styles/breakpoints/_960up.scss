@@ -197,16 +197,16 @@ Stylesheet: 960px以上のモニタで適用
   }
 
   &__desc {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .sns-link {
     & span {
-      font-size: 25px;
+      font-size: 1.1rem;
       &::before {
-        height: 24px;
-        width: 24px;
-        top: 9px;
+        height: 1.1rem;
+        width: 1.1rem;
+        top: 5px;
         right: 10px;
       }
     }
