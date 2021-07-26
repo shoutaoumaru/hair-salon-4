@@ -11,6 +11,10 @@ Stylesheet: 600px以上のモニタで適用
   font-size: 20px;
 }
 
+.c-txt-sm {
+  font-size: 1.8rem;
+}
+
 //header
 .header {
   & .logo__img {
@@ -71,6 +75,7 @@ Stylesheet: 600px以上のモニタで適用
   .sns-link {
     & span {
       font-size: 25px;
+
       &::before {
         height: 24px;
         width: 24px;
@@ -84,6 +89,7 @@ Stylesheet: 600px以上のモニタで適用
 // menu
 .menu {
   &__block02 {
+
     & dd,
     dt {
       font-size: 1rem;

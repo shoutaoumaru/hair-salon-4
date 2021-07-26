@@ -566,12 +566,12 @@ a:hover {
   }
 
   &__date {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: $cGray;
   }
 
   &__title {
-    font-size: 1.2rem;
+    font-size: .9rem;
   }
 }
 
@@ -665,6 +665,7 @@ a:hover {
     position: relative;
     padding-left: 20px;
     font-size: 0.8rem;
+
     &::before {
       position: absolute;
       top: 5px;
