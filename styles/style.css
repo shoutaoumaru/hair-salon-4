@@ -1,18 +1,16 @@
 @charset "UTF-8";
+.cls-1,
+.cls-2 {
+  fill: none;
+  stroke-miterlimit: 10;
+}
+
 .cls-1 {
-  fill: #0d0c0d;
+  stroke: #231815;
 }
 
 .cls-2 {
-  fill: #0e0d0d;
-}
-
-.cls-3 {
-  fill: none;
-  stroke: #fff;
-  stroke-miterlimit: 10;
-  stroke-width: 9px;
-  opacity: 1;
+  stroke: #232339;
 }
 
 .svg-animation {
@@ -708,7 +706,7 @@ a:hover {
   position: absolute;
   top: 4px;
   right: 0;
-  background-image: url(/images/common/tel-white.png);
+  background-image: url(../images/common/tel-white.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -721,7 +719,7 @@ a:hover {
   position: absolute;
   top: 4px;
   right: 0;
-  background-image: url(/images/common/icon-link-1-white.png);
+  background-image: url(../images/common/icon-link-1-white.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -736,7 +734,7 @@ a:hover {
 .icon-map::before {
   content: "";
   display: block;
-  background-image: url(/images/common/icon-map.png);
+  background-image: url(../images/common/icon-map.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -757,7 +755,7 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(/images/common/icon-insta-gr.png);
+  background-image: url(../images/common/icon-insta-gr.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -971,7 +969,7 @@ a:hover {
   left: 0;
   height: 20px;
   width: 20px;
-  background-image: url(/images/common/icon-insta-gr.png);
+  background-image: url(../images/common/icon-insta-gr.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1117,7 +1115,7 @@ a:hover {
   left: 0;
   height: 20px;
   width: 20px;
-  background-image: url(/images/common/icon-map.png);
+  background-image: url(../images/common/icon-map.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1301,7 +1299,7 @@ a:hover {
   left: 0;
   content: "";
   display: inline-block;
-  background-image: url(/images/common/icon-insta-gr.png);
+  background-image: url(../images/common/icon-insta-gr.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 0.8rem;
@@ -1361,7 +1359,7 @@ a:hover {
   left: 0;
   height: 15px;
   width: 15px;
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(../images/common/icon-tel.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1452,7 +1450,7 @@ a:hover {
   content: "";
   position: absolute;
   right: 0;
-  background-image: url(/images/common/arrow.png);
+  background-image: url(../images/common/arrow.png);
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1758,7 +1756,7 @@ a:hover {
 }
 
 .header .logo {
-  background-image: url(/images/common/riv_logo_official2.png);
+  background-image: url(../images/common/riv_logo_official2.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -1967,7 +1965,7 @@ a:hover {
   right: 5px;
   height: 12px;
   width: 12px;
-  background-image: url(/images/common/icon-link-1-black.png);
+  background-image: url(../images/common/icon-link-1-black.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1984,7 +1982,7 @@ a:hover {
   right: 10px;
   height: 12px;
   width: 12px;
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(../images/common/icon-tel.png);
   background-size: contain;
   background-repeat: no-repeat;
 }

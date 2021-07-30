@@ -2,16 +2,7 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>美容師テンプレート4</title>
-  <link rel="stylesheet" href="/styles/vendors/logo-animation.min.css" />
-  <link rel="stylesheet" href="/styles/vendors/animsition.min.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/vendors/swiper.min.css" />
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/style.css" />
+  <?php get_header(); ?>
 </head>
 
 <body class="animsition">
@@ -19,23 +10,6 @@
     <div class="svg-animation">
       <svg id="レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380.06 99.83"
         width="380.05999755859375" height="99.83000183105469">
-        <defs>
-          <style>
-            .cls-1,
-            .cls-2 {
-              fill: none;
-              stroke-miterlimit: 10;
-            }
-
-            .cls-1 {
-              stroke: #231815;
-            }
-
-            .cls-2 {
-              stroke: #232339;
-            }
-          </style>
-        </defs>
         <path class="cls-1 svg-elem-1"
           d="M146.45,384.68c4.32,1.33,8.57,2.9,12.75,4.65a65.91,65.91,0,0,1,8.17-7.14,44.33,44.33,0,0,1,7.92-4.7L158.75,368l-24,13.83A102.37,102.37,0,0,1,146.45,384.68Z"
           transform="translate(-115.52 -367.37)"></path>
@@ -107,7 +81,7 @@
     <header id="header" class="header">
       <div class="mobile-container">
         <div class="logo__img">
-          <a class="animsition-link" href="/">
+          <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">
             <div class="logo inview"></div>
           </a>
         </div>
@@ -122,20 +96,20 @@
       <!-- /.mobile-container -->
       <div class="pc-container">
         <div class="logo__img">
-          <a class="animsition-link" href="/">
+          <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">
             <div class="logo inview"></div>
           </a>
         </div>
         <nav class="pc-nav">
           <ul class="pc-nav-list">
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/staff/staff.html"><span>staff</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>"><span>staff</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/recruite/recruite.html"><span>recruit</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/recruite')); ?>"><span>recruit</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/news/news.html"><span>news</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/news')); ?>"><span>news</span></a>
             </li>
             <li class="pc-nav-item">
               <a target="_blank" class="pc-nav-link reserve-btn"
@@ -163,16 +137,16 @@
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img class="view-sp" src="images/home/style_1@sp.jpg" />
-              <img class="view-pc" src="images/home/style_1@pc.jpg" />
+              <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/style_1@sp.jpg" />
+              <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/style_1@pc.jpg" />
             </div>
             <div class="swiper-slide">
-              <img class="view-sp" src="images/home/cut_3@sp.jpg" />
-              <img class="view-pc" src="images/home/cut_3@pc.jpg" />
+              <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/cut_3@sp.jpg" />
+              <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/cut_3@pc.jpg" />
             </div>
             <div class="swiper-slide">
-              <img class="view-sp" src="images/home/store_4@sp.jpg" />
-              <img class="view-pc" src="images/home/store_4@pc.jpg" />
+              <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/store_4@sp.jpg" />
+              <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/store_4@pc.jpg" />
             </div>
           </div>
         </div>
@@ -202,7 +176,7 @@
             </div>
           </div>
           <div class="concept__img cover-slide">
-            <img class="img-zoom" src="images/home/store_4@pc.jpg" />
+            <img class="img-zoom" src="<?php echo get_template_directory_uri(); ?>/images/home/store_4@pc.jpg" />
           </div>
         </div>
         <div class="concept-wrap">
@@ -216,10 +190,10 @@
           </div>
           <div class="concept__img-block">
             <div class="concept__img-box cover-slide">
-              <img class="img-zoom" src="images/home/style_5@sp.jpg" alt="" />
+              <img class="img-zoom" src="<?php echo get_template_directory_uri(); ?>/images/home/style_5@sp.jpg" alt="" />
             </div>
             <div class="concept__img-box cover-slide">
-              <img class="img-zoom" src="images/home/style_7@sp.jpg" alt="" />
+              <img class="img-zoom" src="<?php echo get_template_directory_uri(); ?>/images/home/style_7@sp.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -241,13 +215,13 @@
           <div class="swiper-container2 cover-slide">
             <div class="swiper-wrapper">
               <div class="swiper-slide second">
-                <img class="img-zoom" src="images/home/style__2.jpg" />
+                <img class="img-zoom" src="<?php echo get_template_directory_uri(); ?>/images/home/style__2.jpg" />
               </div>
               <div class="swiper-slide second">
-                <img class="img-zoom" src="images/home/style_11.jpg" />
+                <img class="img-zoom" src="<?php echo get_template_directory_uri(); ?>/images/home/style_11.jpg" />
               </div>
               <div class="swiper-slide second">
-                <img class="img-zoom" src="images/home/style_2.jpg" />
+                <img class="img-zoom" src="<?php echo get_template_directory_uri(); ?>/images/home/style_2.jpg" />
               </div>
             </div>
           </div>
@@ -267,19 +241,19 @@
           <div class="instagram__img-box">
             <div class="instagram__img item">
               <a href="https://www.instagram.com/rose_hair_make/" target="_blank"><img
-                  src="images/home/style_6.jpg" /></a>
+                  src="<?php echo get_template_directory_uri(); ?>/images/home/style_6.jpg" /></a>
             </div>
             <div class="instagram__img item">
               <a href="https://www.instagram.com/rose_hair_make/" target="_blank"><img
-                  src="images/home/style_8.jpg" /></a>
+                  src="<?php echo get_template_directory_uri(); ?>/images/home/style_8.jpg" /></a>
             </div>
             <div class="instagram__img item">
               <a href="https://www.instagram.com/rose_hair_make/" target="_blank"><img
-                  src="images/home/style_9.jpg" /></a>
+                  src="<?php echo get_template_directory_uri(); ?>/images/home/style_9.jpg" /></a>
             </div>
             <div class="instagram__img item">
               <a href="https://www.instagram.com/p/CBkDfK7DjL3/" target="_blank"><img
-                  src="images/home/style_10.jpg" /></a>
+                  src="<?php echo get_template_directory_uri(); ?>/images/home/style_10.jpg" /></a>
             </div>
             <div class="instagram__btn item">
               <a href="https://www.instagram.com/shouta_oumaru/?hl=ja" class="instagram__link">
@@ -430,23 +404,23 @@
         </div>
         <div class="staff__block02">
           <div class="staff__img staff01 item">
-            <img src="images/home/biyousshi_mens@sp.jpg" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/home/biyousshi_mens@sp.jpg" />
           </div>
           <div class="staff__img staff02 item">
-            <img src="images/home/biyoushi.lady@sp.jpg" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/home/biyoushi.lady@sp.jpg" />
           </div>
           <div class="staff__img staff03 item">
-            <img src="images/home/staff_1@sp.jpg" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/home/staff_1@sp.jpg" />
           </div>
         </div>
         <div class="staff__link item">
-          <a class="view-more animsition-link" href="/staff/staff.html">
+          <a class="view-more animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>">
             <span class="c-txt-md">VIEW MORE</span>
           </a>
         </div>
         <div class="view-img-block">
           <div class="view-img">
-            <img class="parallax-img" src="/images/home/style_5@pc.jpg" alt="" />
+            <img class="parallax-img" src="<?php echo get_template_directory_uri(); ?>/images/home/style_5@pc.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -497,7 +471,7 @@
             RivRoundはスタッフ大募集しています。<br class="view-pc" />詳しくは下記リンクから詳細を御覧ください。
           </p>
           <div class="recruite__btn item">
-            <a class="recruite__link animsition-link" href="/recruite/recruite.html">
+            <a class="recruite__link animsition-link" href="<?php echo esc_url( home_url('/recruite')); ?>">
               <span class="c-txt-md">RICRUIT</span>
             </a>
           </div>
@@ -512,31 +486,19 @@
         </h2>
         <div class="p-news__wrapper appear up">
           <ul class="p-news__list item">
-            <li class="p-news__item">
-              <a class="p-news__link animsition-link" href="/news/news-single.html">
-                <span class="p-news__date">2021/05/25</span>
-                <p class="p-news__title">営業時間短縮営業について</p>
-              </a>
-            </li>
-            <li class="p-news__item">
-              <a class="p-news__link animsition-link" href="/news/news-single.html">
-                <span class="p-news__date">2021/05/25</span>
-                <p class="p-news__title">
-                  新型コロナウィルス感染拡大について
-                </p>
-              </a>
-            </li>
-            <li class="p-news__item">
-              <a class="p-news__link animsition-link" href="/news/news-single.html">
-                <span class="p-news__date">2021/05/25</span>
-                <p class="p-news__title">
-                  ホームページリニューアル致しました
-                </p>
-              </a>
-            </li>
+            <?php query_posts('posts_per_page=3'); ?>
+            <?php if (have_posts()) : while(have_posts()) : the_post();?>
+              <li class="p-news__item">
+                <a class="p-news__link animsition-link" href="<?php the_permalink(); ?>">
+                  <span class="p-news__date"><?php echo get_the_date(); ?></span>
+                  <p class="p-news__title"><?php the_title(); ?></p>
+                </a>
+              </li>
+            <?php endwhile; ?>
+            <?php endif; ?>
           </ul>
           <div class="view-more item">
-            <a class="view-more__link animsition-link" href="/news/news.html">
+            <a class="view-more__link animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">
               <span class="c-txt-md">NEWS LIST</span></a>
           </div>
         </div>
@@ -547,10 +509,10 @@
       <div class="c-container">
         <ul class="sns item">
           <li>
-            <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-3x"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
           </li>
           <li>
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-3x"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f fa-3x"></i></a>
           </li>
         </ul>
         <div class="copy-right item">
@@ -563,16 +525,16 @@
       <nav class="mobile-menu__nav">
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/">TOP</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">TOP</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/staff/staff.html">STAFF</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>">STAFF</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/recruite/recruite.html">RECRUITE</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/recruite')); ?>">RECRUIT</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/news/news.html">NEWS</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">NEWS</a>
           </li>
         </ul>
       </nav>
@@ -594,19 +556,7 @@
     <!-- /.mobile-menu -->
   </div>
   <!-- /.superwrapper -->
-  <script src="scripts/vendors/pace.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="scripts/vendors/animsition.min.js"></script>
-  <script src="scripts/libs/page.js"></script>
-  <script src="scripts/vendors/swiper.min.js"></script>
-  <script src="scripts/vendors/simpleParallax.min.js"></script>
-  <script src="scripts/libs/hero-slider.js"></script>
-  <script src="scripts/libs/scroll-btn.js"></script>
-  <script src="scripts/libs/parallax.js"></script>
-  <script src="scripts/libs//scroll.js"></script>
-  <script src="scripts/libs//text-animation.js"></script>
-  <script src="scripts/libs//mobile-menu.js"></script>
-  <script src="scripts/main.js"></script>
+  <?php get_footer(); ?>
 </body>
 
 </html>

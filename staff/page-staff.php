@@ -1,21 +1,12 @@
+<?php
+  /* Template Name: staff
+   */
+?>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>美容師テンプレート4/staff</title>
-    <link rel="stylesheet" href="/styles/vendors/animsition.min.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../styles/style.css" />
+    <title>美容師テンプレート4 | staff</title>
+    <?php get_header(); ?>
   </head>
 
   <body>
@@ -23,7 +14,7 @@
       <header id="header" class="header">
         <div class="mobile-container">
           <div class="logo__img">
-            <a class="animsition-link" href="/">
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">
               <div class="logo inview"></div>
             </a>
           </div>
@@ -38,41 +29,24 @@
         <!-- /.mobile-container -->
         <div class="pc-container">
           <div class="logo__img">
-            <a class="animsition-link" href="/">
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">
               <div class="logo inview"></div>
             </a>
           </div>
           <nav class="pc-nav">
             <ul class="pc-nav-list">
               <li class="pc-nav-item">
-                <a class="pc-nav-link animsition-link" href="/"
-                  ><span>top</span></a
-                >
+                <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>"><span>staff</span></a>
               </li>
               <li class="pc-nav-item">
-                <a class="pc-nav-link animsition-link" href="/staff/staff.html"
-                  ><span>staff</span></a
-                >
+                <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/recruite')); ?>"><span>recruit</span></a>
               </li>
               <li class="pc-nav-item">
-                <a
-                  class="pc-nav-link animsition-link"
-                  href="/recruite/recruite.html"
-                  ><span>recruit</span></a
-                >
+                <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/news')); ?>"><span>news</span></a>
               </li>
               <li class="pc-nav-item">
-                <a class="pc-nav-link animsition-link" href="/news/news.html"
-                  ><span>news</span></a
-                >
-              </li>
-              <li class="pc-nav-item">
-                <a
-                  target="_blank"
-                  class="pc-nav-link reserve-btn"
-                  href="https://beauty.hotpepper.jp/"
-                  ><span>reserve</span></a
-                >
+                <a target="_blank" class="pc-nav-link reserve-btn"
+                  href="https://beauty.hotpepper.jp/"><span>reserve</span></a>
               </li>
             </ul>
           </nav>
@@ -81,14 +55,10 @@
         <nav class="sp-navbtn">
           <ul class="sp-navbtn__container">
             <li>
-              <a class="tel" href="tel:092-686-7954"
-                >電話予約<i class="icon-tel"></i
-              ></a>
+              <a class="tel" href="tel:092-686-7954">電話予約<i class="icon-tel"></i></a>
             </li>
             <li>
-              <a class="net" target="_blank" href="https://beauty.hotpepper.jp/"
-                >オンライン予約<i class="icon-net"></i
-              ></a>
+              <a class="net" target="_blank" href="https://beauty.hotpepper.jp/">オンライン予約<i class="icon-net"></i></a>
             </li>
           </ul>
         </nav>
@@ -108,7 +78,7 @@
               <div class="c-staff__list">
                 <div class="c-staff__item">
                   <div class="c-staff__img">
-                    <img src="/images/home/biyousshi_mens@sp.jpg" alt="" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/home/biyousshi_mens@sp.jpg" alt="" />
                   </div>
                   <h4 class="c-staff__name">
                     <p class="ja">利部 翔太</p>
@@ -128,7 +98,7 @@
                 </div>
                 <div class="c-staff__item">
                   <div class="c-staff__img">
-                    <img src="/images/home/biyoushi.lady@sp.jpg" alt="" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/home/biyoushi.lady@sp.jpg" alt="" />
                   </div>
                   <h4 class="c-staff__name">
                     <p class="ja">利部 梨花</p>
@@ -149,7 +119,7 @@
                 </div>
                 <div class="c-staff__item">
                   <div class="c-staff__img">
-                    <img src="/images/home/staff_1@sp.jpg" alt="" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/home/staff_1@sp.jpg" alt="" />
                   </div>
                   <h4 class="c-staff__name">
                     <p class="ja">利部 美紀</p>
@@ -177,14 +147,10 @@
         <div class="c-container">
           <ul class="sns item">
             <li>
-              <a href="https://www.instagram.com/"
-                ><i class="fab fa-instagram fa-3x"></i
-              ></a>
+              <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
             </li>
             <li>
-              <a href="https://www.facebook.com/"
-                ><i class="fab fa-facebook-f fa-3x"></i
-              ></a>
+              <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f fa-3x"></i></a>
             </li>
           </ul>
           <div class="copy-right item">
@@ -197,18 +163,16 @@
         <nav class="mobile-menu__nav">
           <ul class="mobile-menu__list">
             <li class="mobile-menu__item">
-              <a class="animsition-link" href="/">TOP</a>
+              <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">TOP</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="animsition-link" href="/staff/staff.html">STAFF</a>
+              <a class="animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>">STAFF</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="animsition-link" href="/recruite/recruite.html"
-                >RECRUITE</a
-              >
+              <a class="animsition-link" href="<?php echo esc_url( home_url('/recruite')); ?>">RECRUIT</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="animsition-link" href="/news/news.html">NEWS</a>
+              <a class="animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">NEWS</a>
             </li>
           </ul>
         </nav>
@@ -222,19 +186,14 @@
           <div class="reserve-btn-net">
             <h4>ネット予約はこちら</h4>
             <div class="reserve-btn">
-              <a href="https://beauty.hotpepper.jp/" target="_blank"
-                ><span>ONLINE RESERVE</span></a
-              >
+              <a href="https://beauty.hotpepper.jp/" target="_blank"><span>ONLINE RESERVE</span></a>
             </div>
           </div>
         </div>
       </div>
       <!-- /.mobile-menu -->
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="/scripts/vendors/animsition.min.js"></script>
-    <script src="/scripts/libs/page.js"></script>
-    <script src="../scripts/libs/scroll-btn.js"></script>
-    <script src="../scripts/libs/mobile-menu.js"></script>
+    <!-- /.superwrapper -->
+    <?php get_template_part('includes/c-footer'); ?>
   </body>
 </html>
