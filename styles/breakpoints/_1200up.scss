@@ -9,9 +9,6 @@ Stylesheet: 1200px以上のモニタで適用
 
 //header
 .header {
-  & .logo__img {
-    margin-top: 30px;
-  }
 
   & .pc-container {
     & .pc-nav-item {
@@ -50,7 +47,6 @@ Stylesheet: 1200px以上のモニタで適用
 
 //* * * * * * staff-page * * * * * * *
 .c-staff {
-  padding: 5vw 0;
 
   &__title {
     & p {
@@ -91,7 +87,6 @@ Stylesheet: 1200px以上のモニタで適用
 
 //* * * * * * recruit-page * * * * * * *
 .c-recruite {
-  padding: 5vw 0;
 
   &__title {
     & p {
@@ -107,8 +102,6 @@ Stylesheet: 1200px以上のモニタで適用
 
 //* * * * * * news-page * * * * * * *
 .c-news {
-  padding-top: 15vw;
-  padding-bottom: 0;
 
   &__title {
     margin-bottom: 5vw !important;

@@ -65,6 +65,10 @@
         <!-- /.nav-btn -->
       </header>
       <!-- /.header -->
+      <div class="c-top-view">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/home/counseling__2.jpg" alt="">
+      </div>
+      <!-- /.c-top-view -->
       <main class="c-staff">
         <div class="c-container">
           <div class="c-staff-wrapper">

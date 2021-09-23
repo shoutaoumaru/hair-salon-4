@@ -62,6 +62,10 @@
       <!-- /.nav-btn -->
     </header>
     <!-- /.header -->
+    <div class="c-top-view">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/home/counseling__2.jpg" alt="">
+    </div>
+    <!-- /.c-top-view -->
     <section class="c-news">
       <div class="c-container">
         <h3 class="c-news__title">
