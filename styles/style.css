@@ -2603,9 +2603,6 @@ Stylesheet: 600px以上のモニタで適用
   .concept__subtitle {
     margin-bottom: 10vw;
   }
-  .instagram__img {
-    height: 220px;
-  }
   .staff__link {
     margin: 10vw 0 10vw 0;
   }
@@ -2741,15 +2738,6 @@ Stylesheet: 960px以上のモニタで適用
   }
   .gallery .swiper-container2 .swiper-slide {
     height: 400px;
-  }
-  .instagram__img-box {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .instagram__img {
-    height: 250px;
-    margin-bottom: 10px;
   }
   .instagram__btn span::before {
     top: 8px;

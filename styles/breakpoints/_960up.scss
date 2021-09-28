@@ -110,15 +110,6 @@ Stylesheet: 960px以上のモニタで適用
 
 //instagram
 .instagram {
-  &__img-box {
-    justify-content: space-between;
-  }
-
-  &__img {
-    height: 250px;
-    margin-bottom: 10px;
-  }
-
   &__btn {
     & span {
       &::before {
