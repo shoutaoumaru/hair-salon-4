@@ -315,26 +315,22 @@ a:hover {
     margin-bottom: 100px;
   }
 
-  &__block {
-    margin: 50px 0 50px 0;
-    letter-spacing: 1px;
-    height: 100%;
-  }
+  #sb_instagram {
+    .sb_instagram_header {
+      display: none;
+    }
 
-  &__img-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
+    #sbi {
+      &_images {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
 
-  &__img {
-    height: 100px;
-    width: 48%;
-    margin-bottom: 10px;
-  }
-
-  &__img {
-    border: solid white 2px;
+        .sbi_item {
+          width: 25% !important;
+        }
+      }
+    }
   }
 
   &__btn {

@@ -932,31 +932,23 @@ a:hover {
   margin-bottom: 100px;
 }
 
-.instagram__block {
-  margin: 50px 0 50px 0;
-  letter-spacing: 1px;
-  height: 100%;
+.instagram #sb_instagram .sb_instagram_header {
+  display: none;
 }
 
-.instagram__img-box {
+.instagram #sb_instagram #sbi_images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
-.instagram__img {
-  height: 100px;
-  width: 48%;
-  margin-bottom: 10px;
-}
-
-.instagram__img {
-  border: solid white 2px;
+.instagram #sb_instagram #sbi_images .sbi_item {
+  width: 25% !important;
 }
 
 .instagram__btn {

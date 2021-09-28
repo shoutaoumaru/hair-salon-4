@@ -238,28 +238,11 @@
           </p>
         </div>
         <div class="instagram-wrap appear up">
-          <div class="instagram__img-box">
-            <div class="instagram__img item">
-              <a href="https://www.instagram.com/rose_hair_make/" target="_blank"><img
-                  src="<?php echo get_template_directory_uri(); ?>/images/home/style_6.jpg" /></a>
-            </div>
-            <div class="instagram__img item">
-              <a href="https://www.instagram.com/rose_hair_make/" target="_blank"><img
-                  src="<?php echo get_template_directory_uri(); ?>/images/home/style_8.jpg" /></a>
-            </div>
-            <div class="instagram__img item">
-              <a href="https://www.instagram.com/rose_hair_make/" target="_blank"><img
-                  src="<?php echo get_template_directory_uri(); ?>/images/home/style_9.jpg" /></a>
-            </div>
-            <div class="instagram__img item">
-              <a href="https://www.instagram.com/p/CBkDfK7DjL3/" target="_blank"><img
-                  src="<?php echo get_template_directory_uri(); ?>/images/home/style_10.jpg" /></a>
-            </div>
-            <div class="instagram__btn item">
-              <a href="https://www.instagram.com/shouta_oumaru/?hl=ja" class="instagram__link">
-                <span class="c-txt-md">follow us</span>
-              </a>
-            </div>
+          <?php echo apply_filters('the_content', '[instagram-feed]'); ?>
+          <div class="instagram__btn item">
+            <a href="https://www.instagram.com/shouta_oumaru/?hl=ja" class="instagram__link">
+              <span class="c-txt-md">follow us</span>
+            </a>
           </div>
         </div>
       </div>
