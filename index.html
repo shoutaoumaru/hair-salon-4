@@ -1,525 +1,592 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>美容師テンプレート4</title>
+    <link rel="stylesheet" href="/styles/vendors/logo-animation.min.css" />
+    <link rel="stylesheet" href="/styles/vendors/animsition.min.css" />
+    <link rel="stylesheet" href="/styles/vendors/bootstrap-reboot.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/vendors/swiper.min.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>美容師テンプレート4</title>
-  <link rel="stylesheet" href="/styles/vendors/logo-animation.min.css" />
-  <link rel="stylesheet" href="/styles/vendors/animsition.min.css" />
-  <link rel="stylesheet" href="/styles/vendors/bootstrap-reboot.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/vendors/swiper.min.css" />
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/style.css" />
-</head>
-
-<body class="animsition">
-  <div class="superwrapper">
-    <header id="header" class="header">
-      <div class="mobile-container">
-        <div class="logo__img">
-          <a class="animsition-link" href="/">
-            <div class="logo inview"></div>
-          </a>
+  <body class="animsition">
+    <div class="superwrapper">
+      <header id="header" class="header">
+        <div class="mobile-container">
+          <div class="logo__img">
+            <a class="animsition-link" href="/">
+              <div class="logo inview"></div>
+            </a>
+          </div>
+          <div class="mobile-button">
+            <button class="mobile-menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
         </div>
-        <div class="mobile-button">
-          <button class="mobile-menu__btn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+        <!-- /.mobile-container -->
+        <div class="pc-container">
+          <div class="logo__img">
+            <a class="animsition-link" href="/">
+              <div class="logo inview"></div>
+            </a>
+          </div>
+          <nav class="pc-nav">
+            <ul class="pc-nav-list">
+              <li class="pc-nav-item">
+                <a class="pc-nav-link animsition-link" href="/staff/staff.html"
+                  ><span>staff</span></a
+                >
+              </li>
+              <li class="pc-nav-item">
+                <a
+                  class="pc-nav-link animsition-link"
+                  href="/recruite/recruite.html"
+                  ><span>recruit</span></a
+                >
+              </li>
+              <li class="pc-nav-item">
+                <a class="pc-nav-link animsition-link" href="/news/news.html"
+                  ><span>news</span></a
+                >
+              </li>
+              <li class="pc-nav-item">
+                <a
+                  target="_blank"
+                  class="pc-nav-link reserve-btn"
+                  href="https://beauty.hotpepper.jp/"
+                  ><span>reserve</span></a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
-      </div>
-      <!-- /.mobile-container -->
-      <div class="pc-container">
-        <div class="logo__img">
-          <a class="animsition-link" href="/">
-            <div class="logo inview"></div>
-          </a>
-        </div>
-        <nav class="pc-nav">
-          <ul class="pc-nav-list">
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/staff/staff.html"><span>staff</span></a>
+        <!-- /.pc-container -->
+        <nav class="sp-navbtn">
+          <ul class="sp-navbtn__container">
+            <li>
+              <a class="tel" href="tel:092-686-7954"
+                >電話予約<i class="icon-tel"></i
+              ></a>
             </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/recruite/recruite.html"><span>recruit</span></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/news/news.html"><span>news</span></a>
-            </li>
-            <li class="pc-nav-item">
-              <a target="_blank" class="pc-nav-link reserve-btn"
-                href="https://beauty.hotpepper.jp/"><span>reserve</span></a>
+            <li>
+              <a class="net" target="_blank" href="https://beauty.hotpepper.jp/"
+                >オンライン予約<i class="icon-net"></i
+              ></a>
             </li>
           </ul>
         </nav>
-      </div>
-      <!-- /.pc-container -->
-      <nav class="sp-navbtn">
-        <ul class="sp-navbtn__container">
-          <li>
-            <a class="tel" href="tel:092-686-7954">電話予約<i class="icon-tel"></i></a>
-          </li>
-          <li>
-            <a class="net" target="_blank" href="https://beauty.hotpepper.jp/">オンライン予約<i class="icon-net"></i></a>
-          </li>
-        </ul>
-      </nav>
-      <!-- /.nav-btn -->
-    </header>
-    <!-- /.header -->
-    <section id="top" class="top">
-      <div class="hero">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img class="view-sp" src="images/home/style_1@sp.jpg" />
-              <img class="view-pc" src="images/home/style_1@pc.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img class="view-sp" src="images/home/cut_3@sp.jpg" />
-              <img class="view-pc" src="images/home/cut_3@pc.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img class="view-sp" src="images/home/store_4@sp.jpg" />
-              <img class="view-pc" src="images/home/store_4@pc.jpg" />
+        <!-- /.nav-btn -->
+      </header>
+      <!-- /.header -->
+      <section id="top" class="top">
+        <div class="hero">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="view-sp" src="images/home/style_1@sp.jpg" />
+                <img class="view-pc" src="images/home/style_1@pc.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img class="view-sp" src="images/home/cut_3@sp.jpg" />
+                <img class="view-pc" src="images/home/cut_3@pc.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img class="view-sp" src="images/home/store_4@sp.jpg" />
+                <img class="view-pc" src="images/home/store_4@pc.jpg" />
+              </div>
             </div>
           </div>
+          <div class="top__textbox clip-js1 skew">
+            <div class="top__text">We Create Special with RivRound.</div>
+          </div>
+          <div class="scrolldown-wrap">
+            <a class="scrolldown" href="#">Scroll</a>
+          </div>
         </div>
-        <div class="top__textbox clip-js1 skew">
-          <div class="top__text">We Create Special with RivRound.</div>
-        </div>
-        <div class="scrolldown-wrap">
-          <a class="scrolldown" href="#">Scroll</a>
-        </div>
-      </div>
-    </section>
-    <!-- /.top -->
-    <article id="concept" class="concept">
-      <div class="c-container">
-        <div class="concept-wrap">
-          <div class="concept__block appear up">
-            <h2 class="concept__title c-title clip-js left">CONCEPT</h2>
-            <h3 class="concept__subtitle item">
-              上質で洗練されたデザインを求めるなら、RivRound。
-            </h3>
-            <div class="concept__desc item">
+      </section>
+      <!-- /.top -->
+      <article id="concept" class="concept">
+        <div class="c-container">
+          <div class="concept-wrap">
+            <div class="concept__block appear up">
+              <h2 class="concept__title item">CONCEPT</h2>
+              <h3 class="concept__subtitle item">
+                上質で洗練されたデザインを求めるなら、RivRound。
+              </h3>
+              <div class="concept__desc item">
+                <p class="concept__p item">
+                  RivRoundでは、ご希望のヘアデザインに仕上がるよう、高い技術力とカウンセリングでお応え。
+                  日々、鏡を見た時に少し微笑むような体験。可愛く、そして美しく。
+                  「明日あなたの大切な人に褒められるように」をコンセプトにRivRoundでは本物の上質にこだわりながら、丁寧なカウンセリングでお客様のなかなか伝えづらいお悩み、ご要望をお伺いして、きれいになるお手伝いをさせて頂きます
+                </p>
+              </div>
+            </div>
+            <div class="concept__img cover-slide">
+              <img class="img-zoom" src="images/home/store_4@pc.jpg" />
+            </div>
+          </div>
+          <div class="concept-wrap">
+            <div class="concept__text appear up">
+              <h3 class="concept__subtitle item">
+                「いつまでも触っていたい髪質に」をコンセプトに。
+              </h3>
               <p class="concept__p item">
-                RivRoundでは、ご希望のヘアデザインに仕上がるよう、高い技術力とカウンセリングでお応え。
-                日々、鏡を見た時に少し微笑むような体験。可愛く、そして美しく。
-                「明日あなたの大切な人に褒められるように」をコンセプトにRivRoundでは本物の上質にこだわりながら、丁寧なカウンセリングでお客様のなかなか伝えづらいお悩み、ご要望をお伺いして、きれいになるお手伝いをさせて頂きます
+                RivRoundでは素敵なヘアスタイルはもちろん、髪質改善に力をいれてます。人それぞれの個性があるように、その人特有の髪質もあります。RivRoundでは、髪質改善のスペシャリストが、お客様一人一人の髪質に合わせたヘアケアを親身になってご対応させていただきます。カットやカラー、パーマ、全てをダメージレスで極上の手触りを実現致しました。
               </p>
             </div>
-          </div>
-          <div class="concept__img cover-slide">
-            <img class="img-zoom" src="images/home/store_4@pc.jpg" />
-          </div>
-        </div>
-        <div class="concept-wrap">
-          <div class="concept__text appear up">
-            <h3 class="concept__subtitle item">
-              「いつまでも触っていたい髪質に」をコンセプトに。
-            </h3>
-            <p class="concept__p item">
-              RivRoundでは素敵なヘアスタイルはもちろん、髪質改善に力をいれてます。人それぞれの個性があるように、その人特有の髪質もあります。RivRoundでは、髪質改善のスペシャリストが、お客様一人一人の髪質に合わせたヘアケアを親身になってご対応させていただきます。カットやカラー、パーマ、全てをダメージレスで極上の手触りを実現致しました。
-            </p>
-          </div>
-          <div class="concept__img-block">
-            <div class="concept__img-box cover-slide">
-              <img class="img-zoom" src="images/home/style_5@sp.jpg" alt="" />
-            </div>
-            <div class="concept__img-box cover-slide">
-              <img class="img-zoom" src="images/home/style_7@sp.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-    <!-- /.concept -->
-    <article id="gallery" class="gallery">
-      <div class="c-container">
-        <div class="gallery__wrap">
-          <div class="gallery__block appear up">
-            <h2 class="gallery__title c-title clip-js left">GALLERY</h2>
-            <h3 class="gallery__subtitle item">
-              毎日鏡を見て微笑む、素敵な私。
-            </h3>
-            <p class="gallery__p item">
-              日々の自分の髪型を、髪質を、愛らしく。もっと鏡を見たくなるお手伝いさせてください。
-            </p>
-          </div>
-          <div class="swiper-container2 cover-slide">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide second">
-                <img class="img-zoom" src="images/home/style__2.jpg" />
+            <div class="concept__img-block">
+              <div class="concept__img-box cover-slide">
+                <img class="img-zoom" src="images/home/style_5@sp.jpg" alt="" />
               </div>
-              <div class="swiper-slide second">
-                <img class="img-zoom" src="images/home/style_11.jpg" />
-              </div>
-              <div class="swiper-slide second">
-                <img class="img-zoom" src="images/home/style_2.jpg" />
+              <div class="concept__img-box cover-slide">
+                <img class="img-zoom" src="images/home/style_7@sp.jpg" alt="" />
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </article>
-    <!-- /.gallery -->
-    <article id="instagram" class="instagram">
-      <div class="c-container">
-        <div class="instagram__block appear up">
-          <h2 class="instagram__title c-title clip-js left">Instagram</h2>
-          <p class="instagram__p item">
-            オススメのカットスタイルをピックアップし、公開しています。
-          </p>
-        </div>
-        <div class="instagram-wrap appear up">
-          <div class="instagram__img-box">
-            <div class="instagram__img item">
-              <a href="https://www.instagram.com/rose_hair_make/" target="_blank"><img
-                  src="images/home/style_6.jpg" /></a>
-            </div>
-            <div class="instagram__img item">
-              <a href="https://www.instagram.com/rose_hair_make/" target="_blank"><img
-                  src="images/home/style_8.jpg" /></a>
-            </div>
-            <div class="instagram__img item">
-              <a href="https://www.instagram.com/rose_hair_make/" target="_blank"><img
-                  src="images/home/style_9.jpg" /></a>
-            </div>
-            <div class="instagram__img item">
-              <a href="https://www.instagram.com/p/CBkDfK7DjL3/" target="_blank"><img
-                  src="images/home/style_10.jpg" /></a>
-            </div>
-            <div class="instagram__btn item">
-              <a href="https://www.instagram.com/shouta_oumaru/?hl=ja" class="instagram__link">
-                <span class="c-txt-md">follow us</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-    <!-- /.instagram -->
-    <article id="menu" class="menu">
-      <div class="c-container">
-        <div class="menu__block01 appear up">
-          <h2 class="menu__title c-title clip-js left">MENU</h2>
-          <p class="menu__p item">
-            カットはもちろん、シャンプーやカラー、パーマ全てがさらさら髪になる。<br />髪のこと、頭皮のことを考慮し、厳選した最新のダメージレス薬剤を使っています。<br />髪や頭皮でお悩みのお客様に合わせた最適な施術を行います。
-          </p>
-        </div>
-        <div class="menu__block02">
-          <div class="desc__box01 appear up">
-            <section class="menu__section item">
-              <h3 class="menu__subtitle">CUT<span>（カット）</span></h3>
-              <dl>
-                <dt>Stylist / Top Stylist</dt>
-                <dd>¥ 4,400 / ¥ 4,700</dd>
-              </dl>
-              <dl>
-                <dt>Director</dt>
-                <dd>¥ 5,000</dd>
-              </dl>
-              <dl>
-                <dt>TAKAGI<span>（新規指名のお客様）</span></dt>
-                <dd>¥ 10,000</dd>
-              </dl>
-            </section>
-            <section class="menu__section item">
-              <h3 class="menu__subtitle">COLOR<span>（カラー）</span></h3>
-              <dl>
-                <dt>リタッチ</dt>
-                <dd>¥ 4,500〜</dd>
-              </dl>
-              <dl>
-                <dt>ワンタッチ</dt>
-                <dd>¥ 5,500〜</dd>
-              </dl>
-              <dl>
-                <dt>ツータッチ</dt>
-                <dd>¥ 10,000〜</dd>
-              </dl>
-              <dl>
-                <dt>ダブルカラー</dt>
-                <dd>¥ 10,000〜</dd>
-              </dl>
-              <dl>
-                <dt>ハイライト</dt>
-                <dd>¥ 10,000〜</dd>
-              </dl>
-            </section>
-            <section class="menu__section item">
-              <h3 class="menu__subtitle">PERM<span>（パーマ）</span></h3>
-              <dl>
-                <dt>ベーシックパーマ</dt>
-                <dd>¥ 6,600 〜</dd>
-              </dl>
-              <dl>
-                <dt>デジタルパーマ</dt>
-                <dd>¥ 11,600 〜</dd>
-              </dl>
-              <dl>
-                <dt>ストレートパーマ</dt>
-                <dd>¥ 17,000 〜</dd>
-              </dl>
-            </section>
-          </div>
-          <div class="desc__box02 appear up">
-            <section class="menu__section item">
-              <h3 class="menu__subtitle">
-                HAIR CARE<span>（ヘアケア）</span>
+      </article>
+      <!-- /.concept -->
+      <article id="gallery" class="gallery">
+        <div class="c-container">
+          <div class="gallery__wrap">
+            <div class="gallery__block appear up">
+              <h2 class="gallery__title c-title item">GALLERY</h2>
+              <h3 class="gallery__subtitle item">
+                毎日鏡を見て微笑む、素敵な私。
               </h3>
-              <dl>
-                <dt>
-                  トリートメント各種<br /><span>（AVEDA／MILBON／Aujua）</span>
-                </dt>
-                <dd class="snd">¥ 2,500 〜 ¥ 5,000</dd>
-              </dl>
-              <dl>
-                <dt>
-                  ヘッドスパ各種<br /><span>（AVEDA／MILBON／Aujua）</span>
-                </dt>
-                <dd class="snd">¥ 500 〜 ¥ 4,000</dd>
-              </dl>
-              <dl>
-                <dt>個室スパ　60min / 90min<br /><span>（AVEDA）</span></dt>
-                <dd class="snd">¥ 8,640 〜 ¥ 10,800</dd>
-              </dl>
-            </section>
-            <section class="menu__section item">
-              <h3 class="menu__subtitle">OTHER<span>（その他）</span></h3>
-              <dl>
-                <dt>シャンプー&amp;ブロー</dt>
-                <dd>¥ 2,500</dd>
-              </dl>
-              <dl>
-                <dt>シャンプー&amp;ブロー<span>（TAKAGI）</span></dt>
-                <dd>¥ 3,000</dd>
-              </dl>
-              <dl>
-                <dt>セット / アップ</dt>
-                <dd>¥ 4,000 / ¥ 5,000</dd>
-              </dl>
-              <dl>
-                <dt>ポイントメイク / フルメイク</dt>
-                <dd>¥ 2,000 / ¥ 4,000</dd>
-              </dl>
-              <dl>
-                <dt>TAKAGIメイク</dt>
-                <dd>¥ 10,000</dd>
-              </dl>
-              <dl>
-                <dt>時間外料金<span>（1時間毎）</span></dt>
-                <dd>+ ¥ 1,500</dd>
-              </dl>
-            </section>
-            <ul class="item">
-              <li>表示価格はすべて税込です</li>
-              <li>
-                カット料金以外は、シャンプー・ブローは含まれておりません。
-              </li>
-              <li>
-                スタイリストやデザインによって料金が異なる場合がございますので予めご確認ください。
-              </li>
-              <li>各種カードでのお支払いも可能です。</li>
-              <li>詳細などお問い合わせはお電話にてご確認ください。</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </article>
-    <!-- /.menu -->
-    <article id="staff" class="staff">
-      <div class="c-container appear up">
-        <div class="staff__block01">
-          <h2 class="staff__title c-title clip-js left">STAFF</h2>
-          <p class="staff__p item">
-            一流の技術を持ったRivRoundのスタッフです。<br />カットの技術はもちろん、髪質や頭皮のこと、徹底したダメージレス施術を行えるスペシャリストです。<br />どんなカットでもケアでも、ご相談に乗りますのでお気軽にどうぞ。
-          </p>
-        </div>
-        <div class="staff__block02">
-          <div class="staff__img staff01 item">
-            <img src="images/home/biyousshi_mens@sp.jpg" />
-          </div>
-          <div class="staff__img staff02 item">
-            <img src="images/home/biyoushi.lady@sp.jpg" />
-          </div>
-          <div class="staff__img staff03 item">
-            <img src="images/home/staff_1@sp.jpg" />
-          </div>
-        </div>
-        <div class="staff__link item">
-          <a class="view-more animsition-link" href="/staff/staff.html">
-            <span class="c-txt-md">VIEW MORE</span>
-          </a>
-        </div>
-        <div class="view-img-block">
-          <div class="view-img">
-            <img class="parallax-img" src="/images/home/style_5@pc.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-    </article>
-    <!-- /.staff -->
-    <article id="access" class="access">
-      <div class="c-container">
-        <div class="access__wrap">
-          <div class="access__block appear up">
-            <h2 class="access__title c-title clip-js left">ACCESS</h2>
-            <div class="access__desc item">
-              <dl>
-                <dt>ADDRESS</dt>
-                <dd>〒812-0011<br />福岡県福岡市博多区博多駅前3-27-25-9F</dd>
-              </dl>
-              <dl>
-                <dt>TEL</dt>
-                <dd><a href="tel:092-686-7954">092-686-7954</a></dd>
-              </dl>
-              <dl>
-                <dt>OPEN</dt>
-                <dd>
-                  火～木 / 10：00 ～ 19：00<br />金 / 10：00 ～ 21：00<br />土
-                  / 9：00 ～ 19：00<br />日・祝 / 9：00 ～ 18：00
-                </dd>
-              </dl>
-              <dl>
-                <dt>CLOSE</dt>
-                <dd>月曜日・第2・3火曜日</dd>
-              </dl>
+              <p class="gallery__p item">
+                日々の自分の髪型を、髪質を、愛らしく。もっと鏡を見たくなるお手伝いさせてください。
+              </p>
             </div>
-            <div class="access__btn item">
-              <a href="https://maps.google.com/maps/place/ROSE三重県鈴鹿市神戸9丁目26-13/@34.884557, 136.585495" target="_blank"
-                class="access__link">
-                <span class="c-txt-md">GOOGLE MAP</span>
-              </a>
+            <div class="swiper-container2 cover-slide">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide second">
+                  <img class="img-zoom" src="images/home/style__2.jpg" />
+                </div>
+                <div class="swiper-slide second">
+                  <img class="img-zoom" src="images/home/style_11.jpg" />
+                </div>
+                <div class="swiper-slide second">
+                  <img class="img-zoom" src="images/home/style_2.jpg" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </article>
-    <!-- /.access -->
-    <article id="recruite" class="recruite">
-      <div class="c-container">
-        <div class="recruite__block appear up">
-          <h2 class="recruite__title c-title clip-js left">RECRUIT</h2>
-          <p class="recruite__p item">
-            RivRoundはスタッフ大募集しています。<br class="view-pc" />詳しくは下記リンクから詳細を御覧ください。
-          </p>
-          <div class="recruite__btn item">
-            <a class="recruite__link animsition-link" href="/recruite/recruite.html">
-              <span class="c-txt-md">RICRUIT</span>
+      </article>
+      <!-- /.gallery -->
+      <article id="instagram" class="instagram">
+        <div class="c-container">
+          <div class="instagram__block appear up">
+            <h2 class="instagram__title c-title item">Instagram</h2>
+            <p class="instagram__p item">
+              オススメのカットスタイルをピックアップし、公開しています。
+            </p>
+          </div>
+          <div class="instagram-wrap appear up">
+            <div class="instagram__img-box">
+              <div class="instagram__img item">
+                <a
+                  href="https://www.instagram.com/rose_hair_make/"
+                  target="_blank"
+                  ><img src="images/home/style_6.jpg"
+                /></a>
+              </div>
+              <div class="instagram__img item">
+                <a
+                  href="https://www.instagram.com/rose_hair_make/"
+                  target="_blank"
+                  ><img src="images/home/style_8.jpg"
+                /></a>
+              </div>
+              <div class="instagram__img item">
+                <a
+                  href="https://www.instagram.com/rose_hair_make/"
+                  target="_blank"
+                  ><img src="images/home/style_9.jpg"
+                /></a>
+              </div>
+              <div class="instagram__img item">
+                <a
+                  href="https://www.instagram.com/p/CBkDfK7DjL3/"
+                  target="_blank"
+                  ><img src="images/home/style_10.jpg"
+                /></a>
+              </div>
+              <div class="instagram__btn item">
+                <a
+                  href="https://www.instagram.com/shouta_oumaru/?hl=ja"
+                  class="instagram__link"
+                >
+                  <span class="c-txt-md">follow us</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- /.instagram -->
+      <article id="menu" class="menu">
+        <div class="c-container">
+          <div class="menu__block01 appear up">
+            <h2 class="menu__title c-title item">MENU</h2>
+            <p class="menu__p item">
+              カットはもちろん、シャンプーやカラー、パーマ全てがさらさら髪になる。<br />髪のこと、頭皮のことを考慮し、厳選した最新のダメージレス薬剤を使っています。<br />髪や頭皮でお悩みのお客様に合わせた最適な施術を行います。
+            </p>
+          </div>
+          <div class="menu__block02">
+            <div class="desc__box01 appear up">
+              <section class="menu__section item">
+                <h3 class="menu__subtitle">CUT<span>（カット）</span></h3>
+                <dl>
+                  <dt>Stylist / Top Stylist</dt>
+                  <dd>¥ 4,400 / ¥ 4,700</dd>
+                </dl>
+                <dl>
+                  <dt>Director</dt>
+                  <dd>¥ 5,000</dd>
+                </dl>
+                <dl>
+                  <dt>TAKAGI<span>（新規指名のお客様）</span></dt>
+                  <dd>¥ 10,000</dd>
+                </dl>
+              </section>
+              <section class="menu__section item">
+                <h3 class="menu__subtitle">COLOR<span>（カラー）</span></h3>
+                <dl>
+                  <dt>リタッチ</dt>
+                  <dd>¥ 4,500〜</dd>
+                </dl>
+                <dl>
+                  <dt>ワンタッチ</dt>
+                  <dd>¥ 5,500〜</dd>
+                </dl>
+                <dl>
+                  <dt>ツータッチ</dt>
+                  <dd>¥ 10,000〜</dd>
+                </dl>
+                <dl>
+                  <dt>ダブルカラー</dt>
+                  <dd>¥ 10,000〜</dd>
+                </dl>
+                <dl>
+                  <dt>ハイライト</dt>
+                  <dd>¥ 10,000〜</dd>
+                </dl>
+              </section>
+              <section class="menu__section item">
+                <h3 class="menu__subtitle">PERM<span>（パーマ）</span></h3>
+                <dl>
+                  <dt>ベーシックパーマ</dt>
+                  <dd>¥ 6,600 〜</dd>
+                </dl>
+                <dl>
+                  <dt>デジタルパーマ</dt>
+                  <dd>¥ 11,600 〜</dd>
+                </dl>
+                <dl>
+                  <dt>ストレートパーマ</dt>
+                  <dd>¥ 17,000 〜</dd>
+                </dl>
+              </section>
+            </div>
+            <div class="desc__box02 appear up">
+              <section class="menu__section item">
+                <h3 class="menu__subtitle">
+                  HAIR CARE<span>（ヘアケア）</span>
+                </h3>
+                <dl>
+                  <dt>
+                    トリートメント各種<br /><span
+                      >（AVEDA／MILBON／Aujua）</span
+                    >
+                  </dt>
+                  <dd class="snd">¥ 2,500 〜 ¥ 5,000</dd>
+                </dl>
+                <dl>
+                  <dt>
+                    ヘッドスパ各種<br /><span>（AVEDA／MILBON／Aujua）</span>
+                  </dt>
+                  <dd class="snd">¥ 500 〜 ¥ 4,000</dd>
+                </dl>
+                <dl>
+                  <dt>個室スパ　60min / 90min<br /><span>（AVEDA）</span></dt>
+                  <dd class="snd">¥ 8,640 〜 ¥ 10,800</dd>
+                </dl>
+              </section>
+              <section class="menu__section item">
+                <h3 class="menu__subtitle">OTHER<span>（その他）</span></h3>
+                <dl>
+                  <dt>シャンプー&amp;ブロー</dt>
+                  <dd>¥ 2,500</dd>
+                </dl>
+                <dl>
+                  <dt>シャンプー&amp;ブロー<span>（TAKAGI）</span></dt>
+                  <dd>¥ 3,000</dd>
+                </dl>
+                <dl>
+                  <dt>セット / アップ</dt>
+                  <dd>¥ 4,000 / ¥ 5,000</dd>
+                </dl>
+                <dl>
+                  <dt>ポイントメイク / フルメイク</dt>
+                  <dd>¥ 2,000 / ¥ 4,000</dd>
+                </dl>
+                <dl>
+                  <dt>TAKAGIメイク</dt>
+                  <dd>¥ 10,000</dd>
+                </dl>
+                <dl>
+                  <dt>時間外料金<span>（1時間毎）</span></dt>
+                  <dd>+ ¥ 1,500</dd>
+                </dl>
+              </section>
+              <ul class="item">
+                <li>表示価格はすべて税込です</li>
+                <li>
+                  カット料金以外は、シャンプー・ブローは含まれておりません。
+                </li>
+                <li>
+                  スタイリストやデザインによって料金が異なる場合がございますので予めご確認ください。
+                </li>
+                <li>各種カードでのお支払いも可能です。</li>
+                <li>詳細などお問い合わせはお電話にてご確認ください。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- /.menu -->
+      <article id="staff" class="staff">
+        <div class="c-container appear up">
+          <div class="staff__block01 item">
+            <h2 class="staff__title c-title">STAFF</h2>
+            <p class="staff__p item">
+              一流の技術を持ったRivRoundのスタッフです。<br />カットの技術はもちろん、髪質や頭皮のこと、徹底したダメージレス施術を行えるスペシャリストです。<br />どんなカットでもケアでも、ご相談に乗りますのでお気軽にどうぞ。
+            </p>
+          </div>
+          <div class="staff__block02">
+            <div class="staff__img staff01 item">
+              <img src="images/home/biyousshi_mens@sp.jpg" />
+            </div>
+            <div class="staff__img staff02 item">
+              <img src="images/home/biyoushi.lady@sp.jpg" />
+            </div>
+            <div class="staff__img staff03 item">
+              <img src="images/home/staff_1@sp.jpg" />
+            </div>
+          </div>
+          <div class="staff__link item">
+            <a class="view-more animsition-link" href="/staff/staff.html">
+              <span class="c-txt-md">VIEW MORE</span>
             </a>
           </div>
+          <div class="view-img-block">
+            <div class="view-img">
+              <img
+                class="parallax-img"
+                src="/images/home/style_5@pc.jpg"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
-      </div>
-    </article>
-    <!-- /.recruit -->
-    <article id="news" class="p-news">
-      <div class="c-container">
-        <h2 class="p-news__tit clip-js left">
-          <p class="c-title">NEWS</p>
-        </h2>
-        <div class="p-news__wrapper appear up">
-          <ul class="p-news__list item">
-            <li class="p-news__item">
-              <a class="p-news__link animsition-link" href="/news/news-single.html">
-                <span class="p-news__date">2021/05/25</span>
-                <p class="p-news__title">営業時間短縮営業について</p>
+      </article>
+      <!-- /.staff -->
+      <article id="access" class="access">
+        <div class="c-container">
+          <div class="access__wrap">
+            <div class="access__block appear up">
+              <h2 class="access__title c-title item">ACCESS</h2>
+              <div class="access__desc item">
+                <dl>
+                  <dt>ADDRESS</dt>
+                  <dd>〒812-0011<br />福岡県福岡市博多区博多駅前3-27-25-9F</dd>
+                </dl>
+                <dl>
+                  <dt>TEL</dt>
+                  <dd><a href="tel:092-686-7954">092-686-7954</a></dd>
+                </dl>
+                <dl>
+                  <dt>OPEN</dt>
+                  <dd>
+                    火～木 / 10：00 ～ 19：00<br />金 / 10：00 ～ 21：00<br />土
+                    / 9：00 ～ 19：00<br />日・祝 / 9：00 ～ 18：00
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>CLOSE</dt>
+                  <dd>月曜日・第2・3火曜日</dd>
+                </dl>
+              </div>
+              <div class="access__btn item">
+                <a
+                  href="https://maps.google.com/maps/place/ROSE三重県鈴鹿市神戸9丁目26-13/@34.884557, 136.585495"
+                  target="_blank"
+                  class="access__link"
+                >
+                  <span class="c-txt-md">GOOGLE MAP</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- /.access -->
+      <article id="recruite" class="recruite">
+        <div class="c-container">
+          <div class="recruite__block appear up">
+            <h2 class="recruite__title c-title item">RECRUIT</h2>
+            <p class="recruite__p item">
+              RivRoundはスタッフ大募集しています。<br
+                class="view-pc"
+              />詳しくは下記リンクから詳細を御覧ください。
+            </p>
+            <div class="recruite__btn item">
+              <a
+                class="recruite__link animsition-link"
+                href="/recruite/recruite.html"
+              >
+                <span class="c-txt-md">RICRUIT</span>
               </a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- /.recruit -->
+      <article id="news" class="p-news">
+        <div class="c-container appear up">
+          <h2 class="p-news__tit item">
+            <p class="c-title">NEWS</p>
+          </h2>
+          <div class="p-news__wrapper appear up">
+            <ul class="p-news__list item">
+              <li class="p-news__item">
+                <a
+                  class="p-news__link animsition-link"
+                  href="/news/news-single.html"
+                >
+                  <span class="p-news__date">2021/05/25</span>
+                  <p class="p-news__title">営業時間短縮営業について</p>
+                </a>
+              </li>
+              <li class="p-news__item">
+                <a
+                  class="p-news__link animsition-link"
+                  href="/news/news-single.html"
+                >
+                  <span class="p-news__date">2021/05/25</span>
+                  <p class="p-news__title">
+                    新型コロナウィルス感染拡大について
+                  </p>
+                </a>
+              </li>
+              <li class="p-news__item">
+                <a
+                  class="p-news__link animsition-link"
+                  href="/news/news-single.html"
+                >
+                  <span class="p-news__date">2021/05/25</span>
+                  <p class="p-news__title">
+                    ホームページリニューアル致しました
+                  </p>
+                </a>
+              </li>
+            </ul>
+            <div class="view-more item">
+              <a class="view-more__link animsition-link" href="/news/news.html">
+                <span class="c-txt-md">NEWS LIST</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- /.p-news -->
+      <footer class="footer">
+        <div class="c-container">
+          <ul class="sns item">
+            <li>
+              <a href="https://www.instagram.com/"
+                ><i class="fab fa-instagram fa-3x"></i
+              ></a>
             </li>
-            <li class="p-news__item">
-              <a class="p-news__link animsition-link" href="/news/news-single.html">
-                <span class="p-news__date">2021/05/25</span>
-                <p class="p-news__title">
-                  新型コロナウィルス感染拡大について
-                </p>
-              </a>
-            </li>
-            <li class="p-news__item">
-              <a class="p-news__link animsition-link" href="/news/news-single.html">
-                <span class="p-news__date">2021/05/25</span>
-                <p class="p-news__title">
-                  ホームページリニューアル致しました
-                </p>
-              </a>
+            <li>
+              <a href="https://www.facebook.com/"
+                ><i class="fab fa-facebook-f fa-3x"></i
+              ></a>
             </li>
           </ul>
-          <div class="view-more item">
-            <a class="view-more__link animsition-link" href="/news/news.html">
-              <span class="c-txt-md">NEWS LIST</span></a>
+          <div class="copy-right item">
+            <span>&copy;RivRound.inc</span>
+          </div>
+        </div>
+      </footer>
+      <!-- /.footer -->
+      <div class="mobile-menu">
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="animsition-link" href="/">TOP</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="animsition-link" href="/staff/staff.html">STAFF</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="animsition-link" href="/recruite/recruite.html"
+                >RECRUIT</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="animsition-link" href="/news/news.html">NEWS</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="reserve-btn-wrap">
+          <div class="reserve-btn-tel">
+            <h4>電話予約はこちら</h4>
+            <div class="reserve-btn">
+              <a href="tel:092-686-7954"><span>092-686-7954</span></a>
+            </div>
+          </div>
+          <div class="reserve-btn-net">
+            <h4>ネット予約はこちら</h4>
+            <div class="reserve-btn">
+              <a href="https://beauty.hotpepper.jp/" target="_blank"
+                ><span>ONLINE RESERVE</span></a
+              >
+            </div>
           </div>
         </div>
       </div>
-    </article>
-    <!-- /.p-news -->
-    <footer class="footer">
-      <div class="c-container">
-        <ul class="sns item">
-          <li>
-            <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-3x"></i></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-3x"></i></a>
-          </li>
-        </ul>
-        <div class="copy-right item">
-          <span>&copy;RivRound.inc</span>
-        </div>
-      </div>
-    </footer>
-    <!-- /.footer -->
-    <div class="mobile-menu">
-      <nav class="mobile-menu__nav">
-        <ul class="mobile-menu__list">
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href="/">TOP</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href="/staff/staff.html">STAFF</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href="/recruite/recruite.html">RECRUIT</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href="/news/news.html">NEWS</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="reserve-btn-wrap">
-        <div class="reserve-btn-tel">
-          <h4>電話予約はこちら</h4>
-          <div class="reserve-btn">
-            <a href="tel:092-686-7954"><span>092-686-7954</span></a>
-          </div>
-        </div>
-        <div class="reserve-btn-net">
-          <h4>ネット予約はこちら</h4>
-          <div class="reserve-btn">
-            <a href="https://beauty.hotpepper.jp/" target="_blank"><span>ONLINE RESERVE</span></a>
-          </div>
-        </div>
-      </div>
+      <!-- /.mobile-menu -->
     </div>
-    <!-- /.mobile-menu -->
-  </div>
-  <!-- /.superwrapper -->
-  <script src="scripts/vendors/pace.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="scripts/vendors/animsition.min.js"></script>
-  <script src="scripts/libs/page.js"></script>
-  <script src="scripts/vendors/swiper.min.js"></script>
-  <script src="scripts/vendors/simpleParallax.min.js"></script>
-  <script src="scripts/libs/hero-slider.js"></script>
-  <script src="scripts/libs/scroll-btn.js"></script>
-  <script src="scripts/libs/parallax.js"></script>
-  <script src="scripts/libs//scroll.js"></script>
-  <script src="scripts/libs//text-animation.js"></script>
-  <script src="scripts/libs//mobile-menu.js"></script>
-  <script src="scripts/main.js"></script>
-</body>
-
+    <!-- /.superwrapper -->
+    <script src="scripts/vendors/pace.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="scripts/vendors/animsition.min.js"></script>
+    <script src="scripts/libs/page.js"></script>
+    <script src="scripts/vendors/swiper.min.js"></script>
+    <script src="scripts/vendors/simpleParallax.min.js"></script>
+    <script src="scripts/libs/hero-slider.js"></script>
+    <script src="scripts/libs/scroll-btn.js"></script>
+    <script src="scripts/libs/parallax.js"></script>
+    <script src="scripts/libs//scroll.js"></script>
+    <script src="scripts/libs//text-animation.js"></script>
+    <script src="scripts/libs//mobile-menu.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
 </html>
